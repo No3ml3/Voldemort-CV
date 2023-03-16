@@ -8,7 +8,12 @@
 </head>
 <body>
     <!-- ouverture de la Modal -->
-<button id="myBtn">Open Modal</button>
+<button id="myBtn1">Formation </button>
+<button id="myBtn2">Open Modal</button>
+<button id="myBtn3">Open Modal</button>
+<button id="myBtn4">Open Modal</button>
+<button id="myBtn5">Open Modal</button>
+<button id="myBtn6">Open Modal</button>
 
 <!-- la Modal -->
 <div id="myModal" class="modal">
@@ -21,7 +26,7 @@
             <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
         </svg>
     </span>
-    <div id='more_presentation'  >
+    <div id='Presentation' >
         <h2>Titre de la page.</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis praesentium explicabo
             et eum maxime delectus inventore ducimus alias, accusamus libero voluptates possimus quidem
@@ -32,6 +37,8 @@
             id eveniet? Praesentium corporis doloribus molestias.
         </p>
     </div>
+
+
 </div>
 
 </div> 

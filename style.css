@@ -27,6 +27,7 @@
 }
 
 #presentation{
+    display: hiden;
     top: 100px;
     margin:  auto;
     text-align: center;
@@ -34,9 +35,81 @@
     width: 50%;
     height: 100%;
     overflow: auto;
-    display: block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+#formation{
+    display: hiden;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#competence{
+    display: hiden;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#experience{
+    display: hiden;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#contact{
+    display: hiden;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#reference{
+    display: hiden;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#infoComplementaire{
+    display: hiden;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+display: block;
 /* The Close Button */
 .close {
     color: #aaa;

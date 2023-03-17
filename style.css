@@ -1,0 +1,553 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
+:root{
+    --fontColorHeader: #8FC2BB;
+    --fontColor: #191a1a;
+    --fontEffrayante : 'Eater', cursive;
+    --fontPasEffrayante : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --spacing : 0.5rem;
+    --spacing1 : 1rem;
+    --spacing2 : 2rem;
+    --spacing3 : 3rem;
+    --spacing4 : 4rem;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    box-shadow: 0 0 100vmax 100vmax rgba(0, 0, 0, 0.8);
+    
+}
+
+  /* Modal Content/Box */
+.modal-content {
+    display:none;
+    background-image: url('assets/images/voldemortcvmodal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    color:grey;
+    width: 80%; /* Could be more or less, depending on screen size */
+    height:80%;
+}
+
+#presentation{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Eater', cursive;
+}
+
+#formation{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Eater', cursive;
+}
+
+#formation h1{
+    text-align: center;
+    font-weight : bolder;
+    line-height : 2rem;
+    font-family: eater;
+    font-size : 2rem;
+    border-radius: 50px;
+}
+#formation ul{
+    padding : 5%;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type :circle;
+}
+#formation li{
+    margin-bottom : 5%;
+    font-size: 1rem;
+    line-height : 2rem;
+    font-weight : bold;
+    
+}
+.dates{
+    font-size : 2rem;
+}
+
+#competence{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Eater', cursive;
+}
+
+#experience{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Eater', cursive;
+}
+
+#contact{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Eater', cursive;
+}
+#contact @media screen and (max-width : 768px){
+        body{
+            background-size: 100% 100%;
+            background-repeat: repeat;
+        }
+        form{
+            align-items : center;
+        }
+        input, textarea{
+            width : 90%;
+            padding : auto;
+            margin-top : 15%;
+        }
+        button{
+            width : 40%;
+            margin-left : initial;
+        }
+    }
+    #contact legend{
+        color : hsl(180, 28%, 65%);
+        text-align: center;
+        font-size: 3rem;
+        font-weight : bolder;
+    }
+    #contact form{
+        display : flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+    #contact input{
+        width : 50%;
+        height : 60px;
+        border-radius : 8px;
+        margin-top: 5%;
+        padding : 1%;
+        background-color: hsl(180, 28%, 65%);
+    }
+    #contact  textarea{
+        width : 80%;
+        height : 180px;
+        border-radius : 8px;
+        background-color: hsl(180, 28%, 65%);
+        margin-top: 5%;
+        padding : 1%;
+    }
+    #contact  button{
+        width : 17%;
+        height : 3rem;
+        margin-top : 2%;
+        margin-left : 70%;
+        padding : auto;
+        background-color: grey;
+        color : white;
+        border-radius : 8px;
+        font-weight: bold;
+    }
+    button a{
+        text-decoration: none;
+        color : white;
+        font-size : 1.3rem;
+    }
+#reference{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Eater', cursive;
+}
+
+#information{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Eater', cursive;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-image: url(assets/images/fondecranordi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--fontEffrayante);
+    margin-top: 6rem ;
+}
+
+header h1 {
+    background-color: #0A0707;
+    height:2rem;
+    border-radius: var(--spacing);
+    font-size: clamp(30px, 2vw, 5rem);
+    border: 2px solid black;
+    box-shadow: 10px 5px 5px rgba(10, 9, 9, 0.25);
+}
+
+.h11{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #8FC2BB;
+    padding-right: clamp(0.5rem, 10%, 5rem);
+    padding-top: clamp(0.5rem, 10%, 5rem);
+    padding-bottom: clamp(0.5rem, 10%, 5rem);
+    padding-left: clamp(0.5rem, 1%, 10rem);
+    width: 40%;
+}
+.H12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #8FC2BB;
+    padding-left: clamp(0.5rem, 10%, 5rem);
+    padding-top: clamp(0.5rem, 10%, 5rem);
+    padding-bottom: clamp(0.5rem, 10%, 5rem);
+    padding-right: clamp(0.5rem, 1%, 10rem);
+    width: 40%;
+}
+
+.VoldemortPhoto {
+    clip-path:ellipse(32% 50%);
+    position: absolute;
+    width: 450px;
+}
+ 
+ @media screen and (max-width: 1000px) {
+    .h1{
+        display: grid;
+        grid-template-columns: 10% 1fr 10%;
+        grid-template-rows: 15% 15% 1fr ;
+
+        margin-top: var(--spacing3);
+
+    }
+    .VoldemortPhoto{
+        grid-row: 3 /4 ;
+        grid-column: 2 / 3;
+        justify-self: center;
+        margin-top: var(--spacing);
+        position: static;
+        width: 360px;
+    }
+    .h11{
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-left: clamp(0.5rem, 10%, 5rem);
+        width: 100%;
+        height: 100px;
+        border-bottom: none ;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    
+    .H12{
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-right: clamp(0.5rem, 10%, 5rem);
+        width: 100%;
+        height: 100px;
+        border-top: none ;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    
+ }
+ 
+
+
+.bouton article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--fontEffrayante);
+    border-radius: var(--spacing);
+    box-shadow: 10px 5px 5px rgba(10, 9, 9, 0.25);;
+    background-image: url(assets/images/fondbouton.jpg);
+    background-size: cover;
+}
+
+.bouton{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    gap: clamp(2rem, 2vw, 6rem);
+    margin-top: var(--spacing4);
+}
+
+.bouton h2{
+    font-size: clamp(35px,2vw, 6rem);
+}
+
+.presentation{
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+
+    filter: brightness(120%);
+    height: 80%;
+}
+
+.formation{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    height: clamp(9rem, 10vw, 17rem);
+}
+
+.competence{
+    grid-column: 4 / 5 ;
+    grid-row: 2 / 3;
+
+    height: clamp(9rem, 10vw, 17rem);
+}
+
+.experience{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+
+    height: clamp(9rem, 10vw, 17rem);
+}
+
+.contact{
+    grid-column: 4 / 5 ;
+    grid-row: 3 / 4;
+
+    height: clamp(9rem, 10vw, 17rem);
+}
+
+.reference{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+
+    height: clamp(9rem, 10vw, 17rem);
+}
+
+.information{
+    grid-column: 4 / 5 ;
+    grid-row: 4 / 5;
+
+    height: clamp(9rem, 10vw, 17rem);
+}
+
+.presentation:hover{
+    filter: brightness(90%);
+    box-shadow: none;
+}
+
+.formation:hover{
+    filter: brightness(80%);
+    box-shadow: none;
+}
+
+.competence:hover{
+    filter: brightness(80%);
+    box-shadow: none;
+}
+
+.experience:hover{
+    filter: brightness(80%);
+    box-shadow: none;
+}
+
+.contact:hover{
+    filter: brightness(80%);
+    box-shadow: none;
+}
+
+.reference:hover{
+    filter: brightness(80%);
+    box-shadow: none;
+}
+
+.information:hover{
+  filter: brightness(80%);
+  box-shadow: none;
+}
+
+@media screen and (max-width:1000px) {
+    body{
+        background-image: url(fondecrantelephone.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+     .bouton{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+
+     }
+
+
+     .presentation{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+
+        justify-self: center;
+
+        height:  clamp(9rem, 10vw, 17rem);
+        width: 90%;
+        max-width: 700px;
+    }
+    
+    .formation{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+
+        justify-self: center;
+
+        width: 90%;
+        max-width: 700px;
+        
+    }
+    
+    .competence{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+
+        justify-self: center;
+
+        width: 90%;
+        max-width: 700px;
+    }
+    
+    .experience{
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+
+        justify-self: center;
+
+        width: 90%;
+        max-width: 700px;
+    }
+    
+    .contact{
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+
+        justify-self: center;
+
+        width: 90%;
+        max-width: 700px;
+    }
+    
+    .reference{
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+
+        justify-self: center;
+
+        width: 90%;
+        max-width: 700px;
+    }
+    
+    .information{
+        grid-column: 1 / 2;
+        grid-row: 7 / 8;
+
+        justify-self: center;
+
+        width:90%;
+        max-width: 700px;
+    }
+    
+}
+@media screen and (min-width: 1001px) and (max-width:1500px){
+    .h11{
+        margin-right: clamp(1rem, 50%, 6rem );
+    }
+    .H12{
+        margin-left: clamp(2rem, 50%, 6rem );
+    }
+    .VoldemortPhoto {
+        width: 400px;
+    }
+
+ }

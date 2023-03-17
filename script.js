@@ -4,8 +4,15 @@ let audio = new Audio("assets/audio/amplificatum.mp3");
 let reduire = new Audio("assets/audio/reducto.mp3");
 let avadaKedavra = new Audio("assets/audio/avada-kedavra.mp3");
 
-// recuperer la modal
+
+
+
+
+// quand l'utilisateur clique ça ouvre les diférentes modal en fonction du bouton 
+
+    // recuperer la modal
 let modal = document.getElementById("myModal");
+let content = document.getElementById('modal-content');
 let modalTextPresentation =document.getElementById("presentation")
 let modalTextFormation =document.getElementById("formation")
 let modalTextCompetence =document.getElementById("competence")
@@ -23,62 +30,128 @@ let contact = document.getElementById("myBtn5");
 let reference = document.getElementById("myBtn6");
 let information = document.getElementById("myBtn7");
 
+    
+    
+    // Vérifiez quel bouton a été cliqué et définissez le contenu modal en conséquence
+    presentation.addEventListener("click", function() {
+        modal.style.display = "block";
+        content.style.display = "block";
+        modalTextPresentation.style.display = "block";
 
-// recuparation  de la balise  <span> qui ferme la modal
-let span = document.getElementsByClassName("close")[0];
+        modalTextFormation.style.display = "none";
+        modalTextCompetence.style.display = "none";
+        modalTextExperience.style.display = "none";
+        modalTextContact.style.display = "none";
+        modalTextReference.style.display = "none";
+        modalTextInformation.style.display = "none";
+        
+        
+    });
 
-// quand l'utilisateur clique ça ouvre les diférentes modal en fonction du bouton 
-presentation.onclick = function() {
-    modal.style.display = "block";
-    modalTextPresentation.style.display = "block";
-    audio.play();
-}
+    formation.addEventListener("click", function() {
+        modal.style.display = "block";
+        content.style.display = "block";
+        modalTextFormation.style.display = "block";
 
-formation.onclick = function() {
-    modal.style.display = "block";
-    modalTextFormation.style.display = "block";
-    audio.play();
-}
+        modalTextPresentation.style.display = "none";
+        modalTextCompetence.style.display = "none";
+        modalTextExperience.style.display = "none";
+        modalTextContact.style.display = "none";
+        modalTextReference.style.display = "none";
+        modalTextInformation.style.display = "none";
+    });
 
-competence.onclick = function() {
-    modal.style.display = "block";
-    modalTextCompetence.style.display = "block";
-    audio.play();
-}
-experience.onclick = function() {
-    modal.style.display = "block";
-    modalTextExperience.style.display = "block";
-    audio.play();
-}
-reference.onclick = function() {
-    modal.style.display = "block";
-    modalTextReference.style.display = "block";
-    audio.play();
-}
+    competence.addEventListener("click", function() {
+        modal.style.display = "block";
+        content.style.display = "block";
+        modalTextCompetence.style.display = "block";
 
-information.onclick = function() {
-    modal.style.display = "block";
-    modalTextInformation.style.display = "block";
-    audio.play();
-}
+        modalTextFormation.style.display = "none";
+        modalTextPresentation.style.display = "none";
+        modalTextExperience.style.display = "none";
+        modalTextContact.style.display = "none";
+        modalTextReference.style.display = "none";
+        modalTextInformation.style.display = "none";
+    });
 
-formation.onclick = function() {
-    modal.style.display = "block";
-    formation.style.display = "block";
-    audio.play();
-}
+    experience.addEventListener("click", function() {
+        modal.style.display = "block";
+        content.style.display = "block";
+        modalTextExperience.style.display = "block";
 
-// quand l'utilisateur clique ça ferme la modal
-span.onclick = function() {
-modal.style.display = "none";
-reduire.play();
-}
+        modalTextFormation.style.display = "none";
+        modalTextCompetence.style.display = "none";
+        modalTextPresentation.style.display = "none";
+        modalTextContact.style.display = "none";
+        modalTextReference.style.display = "none";
+        modalTextInformation.style.display = "none";
+    });
 
-// quand l'utilisateur clique ça ferme la modal en cliquant n'importe ou 
+        contact.addEventListener("click", function() {
+        modal.style.display = "block";
+        content.style.display = "block";
+        modalTextContact.style.display = "block";
+
+        modalTextFormation.style.display = "none";
+        modalTextCompetence.style.display = "none";
+        modalTextExperience.style.display = "none";
+        modalTextPresentation.style.display = "none";
+        modalTextReference.style.display = "none";
+        modalTextInformation.style.display = "none";
+    });
+
+    reference.addEventListener("click", function() {
+        modal.style.display = "block";
+        content.style.display = "block";
+        modalTextReference.style.display = "block";
+
+        modalTextFormation.style.display = "none";
+        modalTextCompetence.style.display = "none";
+        modalTextExperience.style.display = "none";
+        modalTextContact.style.display = "none";
+        modalTextPresentation.style.display = "none";
+        modalTextInformation.style.display = "none";
+    });
+
+    information.addEventListener("click", function() {
+        modal.style.display = "block";
+        content.style.display = "block";
+        modalTextInformation.style.display = "block";
+
+        modalTextFormation.style.display = "none";
+        modalTextCompetence.style.display = "none";
+        modalTextExperience.style.display = "none";
+        modalTextContact.style.display = "none";
+        modalTextReference.style.display = "none";
+        modalTextPresentation.style.display = "none";
+    });
+
+    function closeModal(){
+        let content = document.getElementById('modal-content');
+        let closeModal = document.getElementById('myModal')
+        // recuparation  de la balise  <span> qui ferme la modal
+        let span = document.getElementsByClassName("close")[0];
+        if(span.onclick ){
+            closeModal.style.display = "none";
+            content.style.display = "none";
+    
+        }
+    }
+
+
+
+
+// // quand l'utilisateur clique ça ferme la modal
+// span.onclick = function() {
+// modal.style.display = "none";
+// reduire.play();
+// }
+
+// // quand l'utilisateur clique ça ferme la modal en cliquant n'importe ou 
 
 window.onclick = function(event) {
 if (event.target == modal) {
     modal.style.display = "none";
-    reduire.play();
+    //reduire.play();
 }
 }

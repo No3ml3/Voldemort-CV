@@ -104,7 +104,7 @@
 
             <label for="commentaire"></label>
             <textarea name="commentaire" id="commentaire" placeholder="Votre commentaire..."></textarea>
-            <button><a href="#">Envoyer</a></button>
+            <button><a href="#">Submit</a></button>
 
 </form>
         </div>

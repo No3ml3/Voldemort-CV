@@ -171,7 +171,7 @@
         padding : 1%;
     }
     #contact  button{
-        width : 9%;
+        width : 17%;
         height : 3rem;
         margin-top : 2%;
         margin-left : 70%;
@@ -453,7 +453,7 @@ header h1 {
 
 @media screen and (max-width:1000px) {
     body{
-        background-image: url(assets/images/fondecrantelephone.jpg);
+        background-image: url(fondecrantelephone.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }

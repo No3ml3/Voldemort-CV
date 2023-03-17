@@ -81,32 +81,36 @@
         </div>
 
         <div id='experience' >
-            <h2>experience</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis praesentium explicabo
-                et eum maxime delectus inventore ducimus alias, accusamus libero voluptates possimus quidem
-                id eveniet? Praesentium corporis doloribus molestias.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis praesentium explicabo
-                et eum maxime delectus inventore ducimus alias, accusamus libero voluptates possimus quidem
-                id eveniet? Praesentium corporis doloribus molestias.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis praesentium explicabo
-                et eum maxime delectus inventore ducimus alias, accusamus libero voluptates possimus quidem
-                id eveniet? Praesentium corporis doloribus molestias.
-            </p>
+                
+                <img src="snake1.png" alt="snake">
+                <h1>Expériences</h1>
+                
+
+            <ul>
+                <li><span class="dates">1958-1960</span> : Animateur en centre de loisirs - Les Sequoias - Edimbourg </li>
+                <li><span class="dates">1960 - 1964</span> : Vendeur - Barjow & Beurk - Allée des Embrumes - Londres</li>
+                <li><span class="dates">1964 - 1969</span> : Chauffeur-livreur - Chronopost - Saran</li>
+                <li><span class="dates">1969 - 1972</span> : Equarrisseur - Coopérative des trois moutons - Glasgow</li>
+                <li><span class="dates">1972 - 1975</span> : Professeur de Magie Noire - Poudlard </li>
+                <li><span class="dates">1975 - 1987</span> : Commis de cuisine - Fouquet's - Paris </li>
+            </ul>
         </div>
 
         <div id='contact' >
-        <form method="post" action="form.php">
+            <form method="post" action="form.php">
 
-            <legend>Contact</legend>
-            <label for="name"></label>
-            <input type="text" id="name" placeholder="Votre nom..."></input>
+                <legend>Contact</legend>
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Votre nom..."></input>
 
-            <label for="email"></label>
-            <input type="email" id="email" placeholder="Votre e-mail..."></input>
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="Votre e-mail..."></input>
 
-            <label for="commentaire"></label>
-            <textarea name="commentaire" id="commentaire" placeholder="Votre commentaire..."></textarea>
-            <button><a href="#">Submit</a></button>
+                <label for="commentaire"></label>
+                <textarea name="commentaire" id="commentaire" placeholder="Votre commentaire..."></textarea>
+                <button><a href="#">Submit</a></button>
 
-</form>
+            </form>
         </div>
 
         <div id='reference' >

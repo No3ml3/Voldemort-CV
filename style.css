@@ -11,221 +11,6 @@
     --spacing3 : 3rem;
     --spacing4 : 4rem;
 }
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    box-shadow: 0 0 100vmax 100vmax rgba(0, 0, 0, 0.8);
-    
-}
-
-  /* Modal Content/Box */
-.modal-content {
-    display:none;
-    background-image: url('assets/images/voldemortcvmodal.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    color:grey;
-    width: 80%; /* Could be more or less, depending on screen size */
-    height:80%;
-}
-
-#presentation{
-    display: none;
-    top: 100px;
-    margin:  auto;
-    text-align: center;
-    margin: auto;
-    width: 50%;
-    height: 100%;
-    overflow: auto;
-    font-family: 'Eater', cursive;
-}
-
-#formation{
-    display: none;
-    top: 100px;
-    margin:  auto;
-    text-align: center;
-    margin: auto;
-    width: 50%;
-    height: 100%;
-    overflow: auto;
-    font-family: 'Eater', cursive;
-}
-
-#formation h1{
-    text-align: center;
-    font-weight : bolder;
-    line-height : 2rem;
-    font-family: eater;
-    font-size : 2rem;
-    border-radius: 50px;
-}
-#formation ul{
-    padding : 5%;
-    display : flex;
-    flex-direction: column;
-    align-items: center;
-    list-style-type :circle;
-}
-#formation li{
-    margin-bottom : 5%;
-    font-size: 1rem;
-    line-height : 2rem;
-    font-weight : bold;
-    
-}
-.dates{
-    font-size : 2rem;
-}
-
-#competence{
-    display: none;
-    top: 100px;
-    margin:  auto;
-    text-align: center;
-    margin: auto;
-    width: 50%;
-    height: 100%;
-    overflow: auto;
-    font-family: 'Eater', cursive;
-}
-
-#experience{
-    display: none;
-    top: 100px;
-    margin:  auto;
-    text-align: center;
-    margin: auto;
-    width: 50%;
-    height: 100%;
-    overflow: auto;
-    font-family: 'Eater', cursive;
-}
-
-#contact{
-    display: none;
-    top: 100px;
-    margin:  auto;
-    text-align: center;
-    margin: auto;
-    width: 50%;
-    height: 100%;
-    overflow: auto;
-    font-family: 'Eater', cursive;
-}
-#contact @media screen and (max-width : 768px){
-        body{
-            background-size: 100% 100%;
-            background-repeat: repeat;
-        }
-        form{
-            align-items : center;
-        }
-        input, textarea{
-            width : 90%;
-            padding : auto;
-            margin-top : 15%;
-        }
-        button{
-            width : 40%;
-            margin-left : initial;
-        }
-    }
-    #contact legend{
-        color : hsl(180, 28%, 65%);
-        text-align: center;
-        font-size: 3rem;
-        font-weight : bolder;
-    }
-    #contact form{
-        display : flex;
-        flex-direction: column;
-        padding: 5%;
-    }
-    #contact input{
-        width : 50%;
-        height : 60px;
-        border-radius : 8px;
-        margin-top: 5%;
-        padding : 1%;
-        background-color: hsl(180, 28%, 65%);
-    }
-    #contact  textarea{
-        width : 80%;
-        height : 180px;
-        border-radius : 8px;
-        background-color: hsl(180, 28%, 65%);
-        margin-top: 5%;
-        padding : 1%;
-    }
-    #contact  button{
-        width : 17%;
-        height : 3rem;
-        margin-top : 2%;
-        margin-left : 70%;
-        padding : auto;
-        background-color: grey;
-        color : white;
-        border-radius : 8px;
-        font-weight: bold;
-    }
-    button a{
-        text-decoration: none;
-        color : white;
-        font-size : 1.3rem;
-    }
-#reference{
-    display: none;
-    top: 100px;
-    margin:  auto;
-    text-align: center;
-    margin: auto;
-    width: 50%;
-    height: 100%;
-    overflow: auto;
-    font-family: 'Eater', cursive;
-}
-
-#information{
-    display: none;
-    top: 100px;
-    margin:  auto;
-    text-align: center;
-    margin: auto;
-    width: 50%;
-    height: 100%;
-    overflow: auto;
-    font-family: 'Eater', cursive;
-}
-
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-} 
-
 *{
     box-sizing: border-box;
 }
@@ -451,9 +236,229 @@ header h1 {
   box-shadow: none;
 }
 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    box-shadow: 0 0 100vmax 100vmax rgba(0, 0, 0, 0.8);
+    
+}
+
+  /* Modal Content/Box */
+.modal-content {
+    display:none;
+    background-image: url('assets/images/voldemortcvmodal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    color:grey;
+    width: 80%; /* Could be more or less, depending on screen size */
+    height:80%;
+}
+
+#presentation{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Eater', cursive;
+}
+
+#formation{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Eater', cursive;
+}
+
+#formation h1{
+    text-align: center;
+    font-weight : bolder;
+    line-height : 2rem;
+    font-family: eater;
+    font-size : 2rem;
+    border-radius: 50px;
+}
+#formation ul{
+    padding : 5%;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type :circle;
+}
+#formation li{
+    margin-bottom : 5%;
+    font-size: 1rem;
+    line-height : 2rem;
+    font-weight : bold;
+    
+}
+.dates{
+    font-size : 2rem;
+}
+
+#competence{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Eater', cursive;
+}
+
+#experience{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Eater', cursive;
+}
+
+#experience  h1{
+    text-align: center;
+    font-weight : bolder;
+    line-height : 2rem;
+    font-family: eater;
+    font-size : 3rem;
+    
+}
+#experience ul{
+    padding : 5%;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type :circle;
+}
+#experience li{
+    margin-bottom : 5%;
+    font-size: 1rem;
+    line-height : 2rem;
+    font-weight : bold;
+    
+}
+#contact{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Eater', cursive;
+}
+
+    #contact legend{
+        color : hsl(180, 28%, 65%);
+        text-align: center;
+        font-size: 3rem;
+        font-weight : bolder;
+    }
+    #contact form{
+        display : flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+    #contact input{
+        width : 50%;
+        height : 60px;
+        border-radius : 8px;
+        margin-top: 5%;
+        padding : 1%;
+        background-color: hsl(180, 28%, 65%);
+    }
+    #contact  textarea{
+        width : 80%;
+        height : 180px;
+        border-radius : 8px;
+        background-color: hsl(180, 28%, 65%);
+        margin-top: 5%;
+        padding : 1%;
+    }
+    #contact  button{
+        width : 17%;
+        height : 3rem;
+        margin-top : 2%;
+        margin-left : 70%;
+        padding : auto;
+        background-color: grey;
+        color : white;
+        border-radius : 8px;
+        font-weight: bold;
+    }
+    button a{
+        text-decoration: none;
+        color : white;
+        font-size : 1.3rem;
+    }
+#reference{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Eater', cursive;
+}
+
+#information{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Eater', cursive;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+
 @media screen and (max-width:1000px) {
     body{
-        background-image: url(fondecrantelephone.jpg);
+        background-image: url(assets/images/fondecrantelephone.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -550,4 +555,23 @@ header h1 {
         width: 400px;
     }
 
- }
+}
+
+#contact @media screen and (max-width : 768px){
+    body{
+        background-size: 100% 100%;
+        background-repeat: repeat;
+    }
+    form{
+        align-items : center;
+    }
+    input, textarea{
+        width : 90%;
+        padding : auto;
+        margin-top : 15%;
+    }
+    button{
+        width : 40%;
+        margin-left : initial;
+    }
+}

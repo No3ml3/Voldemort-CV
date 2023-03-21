@@ -18,14 +18,14 @@
         <!-- ouverture de la Modal -->
         <div class="bouton">
             <article id="myBtn1" class="presentation"> <h2>Présentation</h2></article>
-            <article id="myBtn2" class="formation"><h2>Formation</h2></article>
-            <article id="myBtn3" class="competence"><h2>Compétence</h2></article>   
-            <article id="myBtn4" class="experience"><h2>Expérience</h2></article>
+            <article id="myBtn2" class="formation"><h2>Formations</h2></article>
+            <article id="myBtn3" class="competence"><h2>Compétences</h2></article>   
+            <article id="myBtn4" class="experience"><h2>Expériences</h2></article>
             <article id="myBtn5" class="contact"><h2>Contact</h2></article>
-            <article id="myBtn6" class="reference"><h2>Référence</h2></article>
-            <article id="myBtn7" class="information"><h2>Information</h2></article>
+            <article id="myBtn6" class="reference"><h2>Références</h2></article>
+            <article id="myBtn7" class="information"><h2>Informations</h2></article>
         </div>
- </main>
+</main>
     
 
 <!--la Modal--> 
@@ -39,8 +39,11 @@
             <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
         </svg>
         </span>
-        <div id='presentation' >
-            <h2>Présentation</h2>
+        <div id='presentation' class='modalPresentation'>
+            <h1>Présentation</h1>
+
+            <img src="assets/images/snake1.png" alt="snake">
+
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis praesentium explicabo
                 et eum maxime delectus inventore ducimus alias, accusamus libero voluptates possimus quidem
                 id eveniet? Praesentium corporis doloribus molestias.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis praesentium explicabo
@@ -52,9 +55,9 @@
         </div>
 
 
-        <div id='formation' >
+        <div id='formation' class='modalFormation'>
         
-        <img src="snake1.png" alt="snake">
+        <img src="assets/images/snake1.png" alt="snake">
         <h1>Formations</h1>
     
 
@@ -68,35 +71,32 @@
     </ul>
         </div>
 
-        <div id='competence' >
-            <h2>Compétences</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis praesentium explicabo
-                et eum maxime delectus inventore ducimus alias, accusamus libero voluptates possimus quidem
-                id eveniet? Praesentium corporis doloribus molestias.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis praesentium explicabo
-                et eum maxime delectus inventore ducimus alias, accusamus libero voluptates possimus quidem
-                id eveniet? Praesentium corporis doloribus molestias.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis praesentium explicabo
-                et eum maxime delectus inventore ducimus alias, accusamus libero voluptates possimus quidem
-                id eveniet? Praesentium corporis doloribus molestias.
+        <div id='competence' class='modalCompetence' >
+            <h1>Compétences</h1>
+            <img src="assets/images/snake1.png" alt="snake">
+            <p>
+
             </p>
         </div>
 
-        <div id='experience' >
+        <div id='experience' class='modalExperience'>
                 
-                <img src="snake1.png" alt="snake">
+                
                 <h1>Expériences</h1>
+                <img src="assets/images/snake1.png" alt="snake">
                 
 
             <ul>
-                <li><span class="dates">1958-1960</span> : Animateur en centre de loisirs - Les Sequoias - Edimbourg </li>
-                <li><span class="dates">1960 - 1964</span> : Vendeur - Barjow & Beurk - Allée des Embrumes - Londres</li>
-                <li><span class="dates">1964 - 1969</span> : Chauffeur-livreur - Chronopost - Saran</li>
-                <li><span class="dates">1969 - 1972</span> : Equarrisseur - Coopérative des trois moutons - Glasgow</li>
-                <li><span class="dates">1972 - 1975</span> : Professeur de Magie Noire - Poudlard </li>
-                <li><span class="dates">1975 - 1987</span> : Commis de cuisine - Fouquet's - Paris </li>
+                <li><span class="dates">1958 - 1960</span> <p> Animateur en centre de loisirs - Les Sequoias - Edimbourg</p> </li>
+                <li><span class="dates">1960 - 1964</span> <p> Vendeur - Barjow & Beurk - Allée des Embrumes - Londres</p></li>
+                <li><span class="dates">1964 - 1969</span> <p> Chauffeur-livreur - Chronopost - Saran</p></li>
+                <li><span class="dates">1969 - 1972</span> <p> Equarrisseur - Coopérative des trois moutons - Glasgow</p></li>
+                <li><span class="dates">1972 - 1975</span> <p> Professeur de Magie Noire - Poudlard</p> </li>
+                <li><span class="dates">1975 - 1987</span> <p> Commis de cuisine - Fouquet's - Paris</p> </li>
             </ul>
         </div>
 
-        <div id='contact' >
+        <div id='contact'  class='modalContact'>
             <form method="post" action="form.php">
 
                 <legend>Contact</legend>
@@ -113,8 +113,10 @@
             </form>
         </div>
 
-        <div id='reference' >
-            <h2>Titre de la page.</h2>
+        <div id='reference' class='modalReference' >
+            <h1>Références</h1>
+            <img src="assets/images/snake1.png" alt="snake">
+
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis praesentium explicabo
                 et eum maxime delectus inventore ducimus alias, accusamus libero voluptates possimus quidem
                 id eveniet? Praesentium corporis doloribus molestias.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis praesentium explicabo
@@ -125,8 +127,9 @@
             </p>
         </div>
 
-        <div id='information' >
-            <h2>Titre de la page.</h2>
+        <div id='information' class='modalInformation'>
+            <h1>Informations</h1>
+            <img src="assets/images/snake1.png" alt="snake">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis praesentium explicabo
                 et eum maxime delectus inventore ducimus alias, accusamus libero voluptates possimus quidem
                 id eveniet? Praesentium corporis doloribus molestias.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis praesentium explicabo

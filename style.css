@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
+
 :root{
     --fontColorHeader: #8FC2BB;
     --fontColor: #191a1a;
@@ -125,7 +126,8 @@
     overflow: auto;
     font-family: 'Eater', cursive;
 }
-#contact @media screen and (max-width : 768px){
+
+@media screen and (max-width : 768px){
         body{
             background-size: 100% 100%;
             background-repeat: repeat;

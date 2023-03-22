@@ -8,15 +8,17 @@ include 'tableauAccueil.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="pageAccueil.css">
+   <link rel="stylesheet" href="headerAccueil.css">
+   <link rel="stylesheet" href="bodyAccueil.css">
+   <link rel="stylesheet" href="footerAccueil.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div class="h1">
-            <h1 class="h11">THANATOPRACTEUR</h1> 
-            <img src="image/Lordvoldemort-1-.png" alt="photo Voldemort pour CV" class="VoldemortPhoto"/>
-            <h1 class="H12"> LORD VOLDEMORT </h1> 
+        <div class="blocHeader">
+            <h1 class="blocThanatopracteur">THANATOPRACTEUR</h1> 
+            <img src="assets/images/Lordvoldemort-1-.png" alt="photo Voldemort pour CV" class="VoldemortPhoto"/>
+            <h1 class="blocVoldemort"> LORD VOLDEMORT </h1> 
         </section>
     </header>
     <main>
@@ -33,18 +35,18 @@ include 'tableauAccueil.php';
         </div>
         <nav class="navbar">
             <div class="réseaux">
-                <img class="imgFooter" src="image/facebook.jpg">
-                <img class="imgFooter" src="image/instagram.jpg">
-                <img class="imgFooter" src="image/snapchat.jpg">
-                <img class="imgFooter" src="image/twitter.jpg">
+                <img class="imgFooter" src="assets/images/facebook.jpg">
+                <img class="imgFooter" src="assets/images/instagram.jpg">
+                <img class="imgFooter" src="assets/images/snapchat.jpg">
+                <img class="imgFooter" src="assets/images/twitter.jpg">
             </div>
          <div class="footer">
              <div class="email">
-            <img class="imgFooter" src="image/messagerie.jpg">
+            <img class="imgFooter" src="assets/images/messagerie.jpg">
             <p> email:voldemort@gmail.com</p>
             </div>
         <div class="tel">
-            <img class="imgFooter" src="image/téléphone.jpg">
+            <img class="imgFooter" src="assets/images/téléphone.jpg">
             <p> tel:01.66.66.66</p>
         </div>
     </div>

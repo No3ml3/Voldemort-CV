@@ -1,0 +1,113 @@
+@import 'variable.css';
+
+.blocHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--fontEffrayante);
+    margin-top: var(--spacing6) ;
+}
+
+header h1 {
+    background-image: url(assets/images/fondHeader1.jpg);
+    height:2rem;
+    border-radius: var(--spacing);
+    font-size: clamp(30px, 2vw, 5rem);
+    border: 2px solid black;
+    box-shadow: 10px 5px 5px rgba(10, 9, 9, 0.25);
+}
+
+.blocThanatopracteur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #8FC2BB;
+    padding-right: clamp(0.5rem, 10%, 5rem);
+    padding-top: clamp(0.5rem, 10%, 5rem);
+    padding-bottom: clamp(0.5rem, 10%, 5rem);
+    padding-left: clamp(0.5rem, 1%, 10rem);
+    width: 40%;
+}
+.blocVoldemort{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #8FC2BB;
+    padding-left: clamp(0.5rem, 10%, 5rem);
+    padding-top: clamp(0.5rem, 10%, 5rem);
+    padding-bottom: clamp(0.5rem, 10%, 5rem);
+    padding-right: clamp(0.5rem, 1%, 10rem);
+    width: 40%;
+}
+
+.VoldemortPhoto {
+    clip-path:ellipse(32% 50%);
+    position: absolute;
+    width: 450px;
+}
+ 
+ @media screen and (max-width: 1000px) {
+    .blocHeader{
+        display: grid;
+        grid-template-columns: 10% 1fr 10%;
+        grid-template-rows: 15% 15% 1fr ;
+
+        margin-top: var(--spacing3);
+
+    }
+    .VoldemortPhoto{
+        grid-row: 3 /4 ;
+        grid-column: 2 / 3;
+        justify-self: center;
+        margin-top: var(--spacing);
+        position: static;
+        width: 360px;
+    }
+    .blocThanatopracteur{
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-left: clamp(0.5rem, 10%, 5rem);
+        width: 100%;
+        height: 100px;
+        border-bottom: none ;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .blocVoldemort{
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-right: clamp(0.5rem, 10%, 5rem);
+        width: 100%;
+        height: 100px;
+        border-top: none ;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    
+ }
+ @media screen and (min-width: 1001px) and (max-width:1500px){
+    .blocThanatopracteur{
+        margin-right: clamp(1rem, 50%, 6rem );
+    }
+    .blocVoldemort{
+        margin-left: clamp(2rem, 50%, 6rem );
+    }
+    .VoldemortPhoto {
+        width: 400px;
+    }
+
+ }

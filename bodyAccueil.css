@@ -1,0 +1,230 @@
+@import 'variable.css';
+
+.bouton{ 
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.bouton article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--fontEffrayante);
+    border-radius: var(--spacing);
+    box-shadow: 10px 5px 5px rgba(10, 9, 9, 0.25);
+    background-size: cover;
+}
+
+.bouton h2{
+    font-size: clamp(35px,2vw, 6rem);
+}
+
+.boutonModal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    gap: clamp(2rem, 10vw, 10rem);
+    margin: clamp(0.5rem, 10vw, 12rem)
+
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    background-image: url(assets/images/fondP.jpg);
+    background-repeat: repeat;
+    color: var(--fontColorHeader);
+    filter: brightness(120%);
+    width: 80%;
+    margin: var(--spacing2);
+
+}
+
+.presentation h2{
+    margin:0px;
+    margin-top: 1rem;
+    font-size: clamp(30px, 2vw, 6rem);
+}
+
+.presentationText{
+    line-height: 120%;
+    padding: var(--spacing1);
+    font-size: clamp(2rem, 4vw, 3rem) ;
+    margin:clamp(1rem, 2vw, 5rem);
+    font-family: var(--fontPasEffrayante);
+
+    
+}
+
+.formation{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    
+    background-image: url(assets/images/fondbouton.jpg);
+    height:100%;
+    width: 100%;
+}
+
+.competence{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    
+
+    padding: 1rem;
+    background-image: url(assets/images/fondbouton.jpg);
+    height:100%;
+    width: 100%;
+}
+
+.experience{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    
+
+    padding: 1rem;
+    background-image: url(assets/images/fondbouton.jpg);
+    height:100%;
+    width: 100%;
+}
+
+.contact{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    
+
+    background-image: url(assets/images/fondbouton.jpg);
+    height:100%;
+    width: 100%;
+}
+
+.reference{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    
+
+    background-image: url(assets/images/fondbouton.jpg);
+    height:100%;
+    width: 100%;
+}
+
+.information{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    
+
+    background-image: url(assets/images/fondbouton.jpg);
+    height:100%;
+    width: 100%;
+}
+
+
+.formation:hover{
+    filter: brightness(110%);
+    box-shadow: 10px 5px 5px rgba(1, 1, 1, 0.355);
+}
+
+.competence:hover{
+    filter: brightness(110%);
+    box-shadow: 10px 5px 5px rgba(1, 1, 1, 0.355);
+}
+
+.experience:hover{
+    filter: brightness(110%);
+    box-shadow: 10px 5px 5px rgba(1, 1, 1, 0.355);
+}
+
+.contact:hover{
+    filter: brightness(110%);
+    box-shadow: 10px 5px 5px rgba(1, 1, 1, 0.355);
+}
+
+.reference:hover{
+    filter: brightness(110%);
+    box-shadow: 10px 5px 5px rgba(1, 1, 1, 0.355);
+}
+
+.information:hover{
+  filter: brightness(110%);
+  box-shadow: 10px 5px 5px rgba(1, 1, 1, 0.355);
+}
+
+@media screen and (max-width:1000px) {
+    body{
+        background-image: url(assets/images/fond15.jpg);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     .boutonModal{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        margin: clamp(1rem, 5vw, 4rem);
+     }
+
+     .presentation{
+        width: 90%;
+     }
+    
+    .formation{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+
+        justify-self: center;
+
+        max-width: 600px;
+        
+    }
+    
+    .competence{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+
+        justify-self: center;
+
+        max-width: 600px;
+    }
+    
+    .experience{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+
+        justify-self: center;
+
+        max-width: 600px;
+    }
+    
+    .contact{
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+
+        justify-self: center;
+
+        max-width: 600px;
+    }
+    
+    .reference{
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+
+        justify-self: center;
+
+        max-width: 600px;
+    }
+    
+    .information{
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+
+        justify-self: center;
+
+        max-width: 600px;
+    }
+}

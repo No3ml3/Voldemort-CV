@@ -1,0 +1,44 @@
+
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(voldemortcvmodal.jpg);
+    background-size: cover;
+    font-size: 1.5rem;
+    color : white;
+    padding : 5%;
+}
+header{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items : center;
+}
+h1{
+    text-align: center;
+    font-weight : bolder;
+    line-height : 2rem;
+    font-family: eater;
+    font-size : 8rem;
+    border-radius: 50px;
+}
+ul{
+    padding : 10%;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type :circle;
+}
+li{
+    margin-bottom : 5%;
+    font-size: 2rem;
+    line-height : 2rem;
+    font-weight : bold;
+    
+}
+.dates{
+    font-size : 2rem;
+}

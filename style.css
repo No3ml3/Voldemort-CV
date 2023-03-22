@@ -338,20 +338,26 @@ header h1 {
         flex-direction: column;
         padding: 5%;
     }
-     .modalContact input{
-        width : 50%;
-        height : 60px;
+    .modalContact input{
+        width : 100%;
+        height : 40px;
         border-radius : 8px;
-        margin-top: 5%;
+        margin-bottom: 10%;
         padding : 1%;
         background-color: hsl(180, 28%, 65%);
     }
+    .modalContact label{
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+        text-align: left;
+
+    }
+
     .modalContact  textarea{
-        width : 80%;
+        width : 100%;
         height : 180px;
         border-radius : 8px;
         background-color: hsl(180, 28%, 65%);
-        margin-top: 5%;
         padding : 1%;
     }
     .modalContact  button{

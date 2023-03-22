@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Eater&display=swap');
+
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fontColorHeader: #8FC2BB;
+    --fontColor: #191a1a;
+    --fontEffrayante : 'Eater', cursive;
+    --fontPasEffrayante : 'Caveat', cursive;
+    --spacing : 0.5rem;
+    --spacing1 : 1rem;
+    --spacing2 : 2rem;
+    --spacing3 : 3rem;
+    --spacing4 : 4rem;
+    --spacing5 : 5rem;
+    --spacing6 : 6rem;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    background-image: url(img/voldemortcvmodal.jpg);
+    background-size: cover;
+    font-size: 1.5rem;
+    color : white;
+    margin-bottom: 2rem;
+}
+.headerInformation{  
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+
+    font-size: clamp(1rem, 4vw, 4rem);
+    font-family: var(--fontEffrayante);
+}
+
+.imgSerpent{
+    width: 50%;
+}
+
+
+.divInformation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    gap: clamp(4rem, 5vw, 10rem);
+}
+
+.divInformation h2{    
+    font-family: var(--fontPasEffrayante);
+    font-size: clamp(3rem, 4vw, 5rem);
+    text-decoration: underline;
+}
+
+.divInformation ul{
+ 
+    list-style: none;
+    font-family: var(--fontPasEffrayante);
+    font-size: clamp(2rem, 3vw, 3rem);
+
+}
+.divInformation div {
+   justify-self: center;
+}
+
+
+@media screen and (max-width:700px) {
+    .divInformation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }   
+}
+

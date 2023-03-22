@@ -19,6 +19,7 @@
 
 .bouton h2{
     font-size: clamp(35px,2vw, 6rem);
+    text-shadow: 1px 1px 2px rgb(112, 107, 107);
 }
 
 .boutonModal{
@@ -26,7 +27,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 
-    gap: clamp(2rem, 10vw, 10rem);
+    gap: clamp(2rem, 8vw, 7rem);
     margin: clamp(0.5rem, 10vw, 12rem)
 
 }
@@ -35,30 +36,43 @@
     display: flex;
     flex-direction: column;
     align-self: center;
-
-    background-image: url(assets/images/fondP.jpg);
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    background: url(assets/images/serpentPresentation.gif) rgba(0, 0, 0, 0.097);
+    background-position: right 43% top 50%;
+    background-blend-mode:darken;
     background-repeat: repeat;
-    color: var(--fontColorHeader);
-    filter: brightness(120%);
-    width: 80%;
-    margin: var(--spacing2);
-
+    color: rgb(143, 155, 141);
+    width: 100%;
+    height: 100%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 
 .presentation h2{
+    text-align: center;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
     margin:0px;
-    margin-top: 1rem;
-    font-size: clamp(30px, 2vw, 6rem);
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: clamp(40px, 3vw, 7rem);
+    background-color: rgba(0, 0, 0, 0.498);
+    width: clamp(300px, 80%, 1200px);
 }
 
 .presentationText{
-    line-height: 120%;
-    padding: var(--spacing1);
-    font-size: clamp(2rem, 4vw, 3rem) ;
-    margin:clamp(1rem, 2vw, 5rem);
+    line-height: 150%;
+    padding: clamp(2rem, 4vw, 5rem);
+    width: clamp(300px, 80%, 1200px);
+    font-size: clamp(1.8rem, 4vw, 2.2rem) ;
     font-family: var(--fontPasEffrayante);
-
-    
+    color: rgb(255, 255, 255);    
+    background-color: rgba(0, 0, 0, 0.498); 
+    margin-top:0px; 
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 
 .formation{
@@ -169,10 +183,7 @@
         margin: clamp(1rem, 5vw, 4rem);
      }
 
-     .presentation{
-        width: 90%;
-     }
-    
+   
     .formation{
         grid-column: 1 / 2;
         grid-row: 1 / 2;

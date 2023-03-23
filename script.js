@@ -30,6 +30,7 @@ let contact = document.getElementById("myBtn5");
 let reference = document.getElementById("myBtn6");
 let information = document.getElementById("myBtn7");
 
+let voldemort = document.getElementById('voldemort')
     
     
     // Vérifiez quel bouton a été cliqué et définissez le contenu modal en conséquence
@@ -37,7 +38,7 @@ let information = document.getElementById("myBtn7");
         modal.style.display = "block";
         content.style.display = "block";
         modalTextPresentation.style.display = "block";
-
+        audio.play();
         modalTextFormation.style.display = "none";
         modalTextCompetence.style.display = "none";
         modalTextExperience.style.display = "none";
@@ -52,7 +53,7 @@ let information = document.getElementById("myBtn7");
         modal.style.display = "block";
         content.style.display = "block";
         modalTextFormation.style.display = "block";
-
+        audio.play();
         modalTextPresentation.style.display = "none";
         modalTextCompetence.style.display = "none";
         modalTextExperience.style.display = "none";
@@ -65,7 +66,7 @@ let information = document.getElementById("myBtn7");
         modal.style.display = "block";
         content.style.display = "block";
         modalTextCompetence.style.display = "block";
-
+        audio.play();
         modalTextFormation.style.display = "none";
         modalTextPresentation.style.display = "none";
         modalTextExperience.style.display = "none";
@@ -78,7 +79,7 @@ let information = document.getElementById("myBtn7");
         modal.style.display = "block";
         content.style.display = "block";
         modalTextExperience.style.display = "block";
-
+        audio.play();
         modalTextFormation.style.display = "none";
         modalTextCompetence.style.display = "none";
         modalTextPresentation.style.display = "none";
@@ -91,7 +92,7 @@ let information = document.getElementById("myBtn7");
         modal.style.display = "block";
         content.style.display = "block";
         modalTextContact.style.display = "block";
-
+        audio.play();
         modalTextFormation.style.display = "none";
         modalTextCompetence.style.display = "none";
         modalTextExperience.style.display = "none";
@@ -104,7 +105,7 @@ let information = document.getElementById("myBtn7");
         modal.style.display = "block";
         content.style.display = "block";
         modalTextReference.style.display = "block";
-
+        audio.play();
         modalTextFormation.style.display = "none";
         modalTextCompetence.style.display = "none";
         modalTextExperience.style.display = "none";
@@ -117,13 +118,17 @@ let information = document.getElementById("myBtn7");
         modal.style.display = "block";
         content.style.display = "block";
         modalTextInformation.style.display = "block";
-
+        audio.play();
         modalTextFormation.style.display = "none";
         modalTextCompetence.style.display = "none";
         modalTextExperience.style.display = "none";
         modalTextContact.style.display = "none";
         modalTextReference.style.display = "none";
         modalTextPresentation.style.display = "none";
+    });
+
+    voldemort.addEventListener("click", function() {
+        avadaKedavra.play();
     });
 
     function closeModal(){
@@ -134,6 +139,7 @@ let information = document.getElementById("myBtn7");
         if(span.onclick ){
             closeModal.style.display = "none";
             content.style.display = "none";
+            reduire.play();
     
         }
     }
@@ -152,6 +158,6 @@ let information = document.getElementById("myBtn7");
 window.onclick = function(event) {
 if (event.target == modal) {
     modal.style.display = "none";
-    //reduire.play();
+    reduire.play();
 }
 }

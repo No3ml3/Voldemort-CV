@@ -1,16 +1,16 @@
 <?php
 $dataInformation = [
-    'Loisirs' => [
+    'Loisir' => [
         'Tuer des gens',
         'Club mangemort',
         'Les reptiles'
     ],
-    'Défauts' => [
-        'Narcissique',
-        'Sociopathe',
-        'Mégalomane',
-        'Alexithymie',
-        'Assassin',
+    'Défault' => [
+        'narcissique',
+        'sociopathe',
+        'mégalomane',
+        'alexithymie',
+        'assassin',
     ],
     
     'Objectifs' => [
@@ -19,10 +19,9 @@ $dataInformation = [
         'Tuer Harry Potter',
     ],
    
-    'Langues' => [
+    'Langue' => [
         'Anglais',
-        'Fourchelangue',
-        'Français',
+        'Fourchelang',
     ],
    ];
 

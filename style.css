@@ -1,90 +1,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
-
 :root{
     --fontColorHeader: #8FC2BB;
     --fontColor: #191a1a;
     --fontEffrayante : 'Eater', cursive;
-    --fontPasEffrayante : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --fontPasEffrayante : 'Caveat', cursive;
     --spacing : 0.5rem;
     --spacing1 : 1rem;
     --spacing2 : 2rem;
     --spacing3 : 3rem;
     --spacing4 : 4rem;
 }
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    box-shadow: 0 0 100vmax 100vmax rgba(0, 0, 0, 0.8);
+*{
+    box-sizing: border-box;
     
-}
-
-  /* Modal Content/Box */
-.modal-content {
-    display:none;
-    background-image: url('assets/images/voldemortcvmodal.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    color:grey;
-    width: 80%; /* Could be more or less, depending on screen size */
-    height:80%;
-}
-
-#presentation{
-    display: none;
-    top: 100px;
-    margin:  auto;
-    text-align: center;
-    margin: auto;
-    width: 50%;
-    height: 100%;
-    overflow: auto;
-    font-family: 'Eater', cursive;
-}
-
-#formation{
-    display: none;
-    top: 100px;
-    margin:  auto;
-    text-align: center;
-    margin: auto;
-    width: 50%;
-    height: 100%;
-    overflow: auto;
-    font-family: 'Eater', cursive;
-}
-
-#formation h1{
-    text-align: center;
-    font-weight : bolder;
-    line-height : 2rem;
-    font-family: eater;
-    font-size : 2rem;
-    border-radius: 50px;
-}
-#formation ul{
-    padding : 5%;
-    display : flex;
-    flex-direction: column;
-    align-items: center;
-    list-style-type :circle;
-}
-#formation li{
-    margin-bottom : 5%;
-    font-size: 1rem;
-    line-height : 2rem;
-    font-weight : bold;
     
 }
 .dates{
@@ -126,8 +55,7 @@
     overflow: auto;
     font-family: 'Eater', cursive;
 }
-
-@media screen and (max-width : 768px){
+#contact @media screen and (max-width : 768px){
         body{
             background-size: 100% 100%;
             background-repeat: repeat;
@@ -221,20 +149,9 @@
     
 }
 
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-} 
-
-*{
-    box-sizing: border-box;
-}
-
 body{
     margin: 0;
-    background-image: url(assets/images/fondecranordi.jpg);
+    background-image: url(assets/images/essai.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -250,7 +167,7 @@ body{
     margin-top: 6rem ;
 }
 
-header h1 {
+.h1 header h1 {
     background-color: #0A0707;
     height:2rem;
     border-radius: var(--spacing);
@@ -289,65 +206,12 @@ header h1 {
     position: absolute;
     width: 450px;
 }
- 
- @media screen and (max-width: 1000px) {
-    .h1{
-        display: grid;
-        grid-template-columns: 10% 1fr 10%;
-        grid-template-rows: 15% 15% 1fr ;
-
-        margin-top: var(--spacing3);
-
-    }
-    .VoldemortPhoto{
-        grid-row: 3 /4 ;
-        grid-column: 2 / 3;
-        justify-self: center;
-        margin-top: var(--spacing);
-        position: static;
-        width: 360px;
-    }
-    .h11{
-        grid-row: 1 / 2;
-        grid-column: 2 / 3;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        padding-left: clamp(0.5rem, 10%, 5rem);
-        width: 100%;
-        height: 100px;
-        border-bottom: none ;
-        border-bottom-right-radius: 0px;
-        border-bottom-left-radius: 0px;
-    }
-    
-    .H12{
-        grid-row: 2 / 3;
-        grid-column: 2 / 3;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        padding-right: clamp(0.5rem, 10%, 5rem);
-        width: 100%;
-        height: 100px;
-        border-top: none ;
-        border-top-right-radius: 0px;
-        border-top-left-radius: 0px;
-    }
-    
- }
- 
-
 
 .bouton article{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    padding: 1rem;
     font-family: var(--fontEffrayante);
     border-radius: var(--spacing);
     box-shadow: 10px 5px 5px rgba(10, 9, 9, 0.25);;
@@ -453,27 +317,300 @@ header h1 {
   box-shadow: none;
 }
 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: #0a0707aa;
+    backdrop-filter: blur(5px);
+}
+
+  /* Modal Content/Box */
+.modal-content {
+    display:none;
+    background-image: url('assets/images/voldemortcvmodal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    top: 0;
+    margin: 10% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    color:grey;
+    overflow: auto; /* Enable scroll if needed */
+    width: 80%; /* Could be more or less, depending on screen size */
+    height:80%;
+    
+}
+
+.modalPresentation{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    font-family: var(--fontPasEffrayante);
+}
+
+.modalFormation{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    font-family: var(--fontPasEffrayante);
+}
+.modalFormation h1{
+    text-align: center;
+    font-weight : bolder;
+    line-height : 2rem;
+    font-family:  var(--fontPasEffrayante);
+    font-size : 3rem;
+    
+}
+.divFormation{
+    gap: clamp(4rem, 5vw, 10rem);
+    font-family: var(--fontPasEffrayante);
+    list-style: none;
+    font-size: clamp(2rem, 3vw, 3rem);
+    justify-self: center;
+    padding: 10%;
+}
+.divFormation li{
+    margin-bottom: 10%;
+}
+.divFormation p{
+
+    list-style: none;
+    font-family: var(--fontPasEffrayante);
+    font-size: 1.5rem;
+
+}
+.dates{
+    font-size : 2rem;
+    font-family: var(--fontPasEffrayante);
+}
+
+.modalCompetence{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    font-family:  var(--fontPasEffrayante);
+}
+
+.modalExperience{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    font-family:  var(--fontPasEffrayante);
+}
+
+.modalExperience  h1{
+    text-align: center;
+    font-weight : bolder;
+    line-height : 2rem;
+    font-family:  var(--fontPasEffrayante);
+    font-size : 3rem;
+    
+}
+.modalExperience ul{
+    padding : 5%;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    
+}
+.modalExperience li{
+    margin-bottom : 5%;
+    font-size: 2rem;
+    line-height : 2rem;
+    font-family:  var(--fontPasEffrayante);
+    
+}
+.modalContact{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    font-family:  var(--fontPasEffrayante);
+}
+
+    .modalContact legend{
+        color : hsl(180, 28%, 65%);
+        text-align: center;
+        font-size: 3rem;
+        font-weight : bolder;
+    }
+    .modalContact form{
+        display : flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+    .modalContact input{
+        width : 100%;
+        height : 40px;
+        border-radius : 8px;
+        margin-bottom: 10%;
+        padding : 1%;
+        background-color: hsl(180, 28%, 65%);
+    }
+    .modalContact label{
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+        text-align: left;
+
+    }
+
+    .modalContact  textarea{
+        width : 100%;
+        height : 180px;
+        border-radius : 8px;
+        background-color: hsl(180, 28%, 65%);
+        padding : 1%;
+    }
+    .modalContact  button{
+        width : 17%;
+        height : 3rem;
+        margin-top : 2%;
+        margin-left : 70%;
+        padding : auto;
+        background-color: grey;
+        color : white;
+        border-radius : 8px;
+        font-weight: bold;
+    }
+    .modalContact button a{
+        text-decoration: none;
+        color : white;
+        font-size : 1.3rem;
+    }
+.modalReference{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    font-family:  var(--fontPasEffrayante);
+}
+
+.modalInformation{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    font-family:  var(--fontPasEffrayante);
+}
+
+
+.banniere{
+    display: flex;
+    justify-content: space-around;
+}
+
+.modalInformation h1{
+    margin: 2%;
+    font-size: 3rem;
+}
+
+.banniere img{
+    width: 200px;
+    height: 250px;
+    
+    
+}
+
+.imgSerpent{
+    width: 40%;
+    margin-bottom: 5%;
+}
+.divInformation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    gap: clamp(4rem, 5vw, 10rem);
+}
+
+.divInformation h2{    
+    font-family: var(--fontPasEffrayante);
+    font-size: 2.5rem;
+    
+}
+
+.divInformation ul,li{
+ 
+    list-style: none;
+    font-family: var(--fontPasEffrayante);
+    font-size: 1.5rem;
+
+}
+.divInformation div {
+   justify-self: center;
+   padding: 10%;
+}
+
+.footerModalInfo{
+    display: flex;
+    justify-content: center;
+
+    margin: 1rem;
+}
+
+.deathEater{
+    width: 40%;
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+
 @media screen and (max-width:1000px) {
     body{
-        background-image: url(fondecrantelephone.jpg);
+        background-image: url(assets/images/fondecrantelephone.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
-     .bouton{
+    .bouton{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
+    }
 
 
-     }
-
-
-     .presentation{
+    .presentation{
         grid-column: 1 / 2;
         grid-row: 1 / 2;
-
         justify-self: center;
-
         height:  clamp(9rem, 10vw, 17rem);
         width: 90%;
         max-width: 700px;
@@ -493,10 +630,8 @@ header h1 {
     .competence{
         grid-column: 1 / 2;
         grid-row: 3 / 4;
-
         justify-self: center;
-
-        width: 90%;
+            width: 90%;
         max-width: 700px;
     }
     
@@ -539,7 +674,103 @@ header h1 {
         width:90%;
         max-width: 700px;
     }
+
+    .modal-content{
+        width: 100%;
+    }
+
+    .modalContact div{
+        width:100%
+    }
+    .modalContact form{
+        align-items : center;
+        padding: 15%;
+    }
+    .modalContact input, textarea{
+        width : 90%;
+        padding : auto;
+        margin-top : 10%;
+        
+    }
+    .modalContact button{
+        width : 80%;
+        margin-left : initial;
+        margin-top: 5%;
+
+        
+    }
+
+    .modalPresentation div{
+        width:100%
+    }
+
+    .modalFormation {
+        width:100%
+    }
+    .modalCompetence div{
+        width:100%
+    }
+
+    .modalExperience div{
+        width:100%
+    }
+
+    .modalExperience li{
+        
+        line-height : 1rem;
+        
+        
+    }
     
+    .modalExperience  h1{
+    
+        font-size : 1rem;
+    }
+
+    .modalExperience  li p{
+    
+        font-size : 1rem;
+        
+    }
+
+    .dates{
+        font-size: 1.5rem;
+    }
+
+    .modalReference div{
+        width:100%
+    }
+
+    .modalInformation div{
+        width:100%
+    }
+    .divInformation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+    }   
+
+    .divFormation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%
+    } 
+    .divFormation p{
+        font-size: 1.5rem;
+    }
+
+    .banniere img{
+        width: 100px;
+        height: 50%;                                                                
+    }
+
+    .deathEater{
+        width:100%;
+        height: 100%;
+    }
 }
 @media screen and (min-width: 1001px) and (max-width:1500px){
     .h11{
@@ -552,4 +783,56 @@ header h1 {
         width: 400px;
     }
 
- }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .h1{
+        display: grid;
+        grid-template-columns: 10% 1fr 10%;
+        grid-template-rows: 15% 15% 1fr ;
+
+        margin-top: var(--spacing3);
+
+    }
+    .VoldemortPhoto{
+        grid-row: 3 /4 ;
+        grid-column: 2 / 3;
+        justify-self: center;
+        margin-top: var(--spacing);
+        position: static;
+        width: 360px;
+    }
+    .h11{
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-left: clamp(0.5rem, 10%, 5rem);
+        width: 100%;
+        height: 100px;
+        border-bottom: none ;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    
+    .H12{
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-right: clamp(0.5rem, 10%, 5rem);
+        width: 100%;
+        height: 100px;
+        border-top: none ;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    
+}

@@ -26,7 +26,6 @@ include 'tableauInformation.php';
             </div>
                 <img src="img/banderoleSerpentard.png" alt="logoSerpentard" class="logoSerpentard">
         </div>
-
     </header>
 
     <main>

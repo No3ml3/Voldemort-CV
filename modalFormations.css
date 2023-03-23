@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Eater&display=swap');
 
 
 *{
@@ -5,58 +7,88 @@
     padding : 0;
     box-sizing: border-box;
 }
-body{
-    background-image: url(./assets/images/harryVsVoldemort.jpg);
-    background-size: cover;
-    background-position: right;
-    background-repeat : no-repeat;
-    font-size: 1.5rem;
-    color : rgb(242, 222, 222);
-    padding : 5%;
+
+:root{
+    --fontColorHeader: #8FC2BB;
+    --fontColor: #191a1a;
+    --fontEffrayante : 'Eater', cursive;
+    --fontPasEffrayante : 'Caveat', cursive;
+    --spacing : 0.5rem;
+    --spacing1 : 1rem;
+    --spacing2 : 2rem;
+    --spacing3 : 3rem;
+    --spacing4 : 4rem;
+    --spacing5 : 5rem;
+    --spacing6 : 6rem;
 }
-header{
+
+.bodyModalInfo{
     display: flex;
-    flex-direction: column-reverse;
-    align-items : center;
+    flex-direction: column;
+    align-items: center;  
+    background-image: url(img/voldemortcvmodal.jpg);
+    background-position: left 15% top 30%;
+    background-size: cover;
+    font-size: 1.5rem;
+    color : rgb(173, 178, 173);
+    margin-bottom: 2rem;
 }
-h1{
-    text-align: center;
-    font-weight : bolder;
-    line-height : 2rem;
-    font-family: eater;
-    font-size : 8rem;
-    border-radius: 50px;
-}
-ul{
-    padding : 10%;
-    display : flex;
+.headerInformation{
+    display: flex;
+    justify-content: space-around;    font-size: clamp(1.5rem, 4vw, 5rem);
+    font-family: var(--fontPasEffrayante);
+    margin-bottom: 5%;
+}.logoEtText{
+    display: flex;
     flex-direction: column;
     align-items: center;
-    list-style-type :circle;
+}
+
+.logoEtText h1{
+    margin: 2%;
+}
+
+.logoSerpentard{
+    width: clamp(60px, 15%, 250px);
+    filter : drop-shadow(10px 10px 4px #121212AE)
+}
+
+.imgSerpent{
+    width: 30%;
+}
+
+.divInformation{
+    gap: clamp(4rem, 5vw, 10rem);
+    font-family: var(--fontPasEffrayante);
+    list-style: none;
+    font-size: clamp(2rem, 3vw, 3rem);
+    justify-self: center;
+    padding: 10%;
+}
+
+.footerModalInfo{
+    display: flex;
+    justify-content: center;
+
+    margin: 1rem;
+}
+
+.deathEater{
+    width: 40%;
 }
 li{
     margin-bottom : 5%;
-    font-size: 2rem;
-    line-height : 2rem;
-    font-weight : bold;
-    
 }
-.dates{
-    font-size : 2rem;
+
+@media screen and (max-width:700px) {
+    .divInformation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }   
 }
-@media screen and (max-width : 768px){
-    h1{
-        font-size : 1.5rem;
-    }
-    li{
-        font-size : 1rem;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    .dates{
-        font-size : 1.2rem;
-    }
-    img{
-        width : 300px;
-        height : 150px;
-    }
-}
+
+
+
+

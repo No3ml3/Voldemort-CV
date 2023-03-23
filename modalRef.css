@@ -1,68 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Eater&display=swap');
+
+
 *{
-    padding : 0;
     margin : 0;
-    box-sizing : border-box;
+    padding : 0;
+    box-sizing: border-box;
 }
+
+:root{
+    --fontColorHeader: #8FC2BB;
+    --fontColor: #191a1a;
+    --fontEffrayante : 'Eater', cursive;
+    --fontPasEffrayante : 'Caveat', cursive;
+    --spacing : 0.5rem;
+    --spacing1 : 1rem;
+    --spacing2 : 2rem;
+    --spacing3 : 3rem;
+    --spacing4 : 4rem;
+    --spacing5 : 5rem;
+    --spacing6 : 6rem;
+}
+
 body{
-    background-image: url(./assets/images/voldemortcvmodal.jpg);
-    background-size: cover;
-    color :rgb(156, 136, 136);
-    font-size : 2rem;
-    font-family : eater;
-}
-header h1{
-    text-align : center;
-    font-size : 6rem;
-    color : black;
-    margin-bottom : 80px;
-}
-h1{
-    font-size : 2rem;
-}
-h2{
-    font-size : 1.5rem;
-}
-.references{
-    display : flex;
+    display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    background-image: url(./assets/images/voldemortcvmodal.jpg);
+    background-position: left 15% top 30%;
+    background-size: cover;
+    font-size: 1.5rem;
+    color : rgb(173, 178, 173);
+    margin-bottom: 2rem;
+}
+.headerInformation{
+    display: flex;
+    justify-content: space-around;    font-size: clamp(1.5rem, 4vw, 5rem);
+    font-family: var(--fontPasEffrayante);
+    margin-bottom: 5%;
+    perspective: 5000px;
+    transform-style: preserve-3d;
+}
+.logoEtText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoEtText h1{
+    margin: 2%;
+}
+
+.logoSerpentard{
+    width: clamp(60px, 15%, 250px);
+    filter : drop-shadow(10px 10px 4px #121212AE);
+    animation: taille 2s ease-in-out infinite alternate;
+    transform-origin: center top;
+}
+
+@keyframes taille{
+    from{transform:rotateX(20deg)}
+    to{transform:rotateX(-20deg)}
+
+}
+
+
+.imgSerpent{
+    width: 30%;
+}
+
+.divInformation{
+    display : flex;
+    flex-direction : column;
     align-items : flex-start;
-    padding : 5%;
+    font-family: var(--fontPasEffrayante);
+    font-size: clamp(2rem, 3vw, 3rem);
 }
 .reference{
-    width : 100%;
     display : flex;
-    justify-content : flex-start;
-    gap : 80px;
-    align-items: center;
-    margin-bottom : 2%;
+    width : 100%;
+    align-items: flex-start;
+    margin-bottom : 5%;
+    padding-left : 10%;
 }
-img{
+.reference img{
     width : 150px;
     height : 150px;
+    border-radius : 50%;
+    margin-right : 5%;
     object-fit: cover;
     object-position: top;
-    border-radius: 50%;
-    border : 3px solid rgb(29, 42, 35);
+    aspect-ratio: 1/1;
 }
+
 .reference > img:hover{
-    transform : scale(1.8);
-    transition : transform 2s;
+        transform : scale(1.1);
+        transition : transform 0.5s;
+    }
+h3{
+    font-size : 1.4rem;
 }
-@media screen and (max-width : 768px){
-    header h1{
-        font-size : 1.5rem;
-    }
-    h1{
-        font-size : 1.5rem;
-    }
-    h2{
-        font-size : 1rem;
-    }
-    .references{
+
+.footerModalInfo{
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.deathEater{
+    width: 40%;
+    text-align: center;
+    animation: rotation 5s linear infinite reverse;
+    transform-origin: center center;
+      }
+      @keyframes rotation {
+        0% {
+          transform: rotate(0) translateX(0px);
+        }
+        50%{
+          transform: rotate(90deg) translateX(0px);
+        }
+        75%{
+            transform: rotate(180deg) translateX(0px);
+        }
+        100% {
+          transform: rotate(360deg) translateX(0px);
+        }
+      }
+
+@media screen and (max-width:700px) {
+    .divInformation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }  
+    references{
         align-items : center;
     }
     .reference{
+        width : 100%;
         flex-direction : column;
         justify-content: flex-start;
         align-items: center;
@@ -79,7 +155,8 @@ img{
         transform : none;
         transition : none;
     }
-    .reference h1, .reference h2{
+    .reference h2, .reference h3{
+        width : 100%;
         text-align: center;
-    }
+    } 
 }

@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Eater&display=swap" rel="stylesheet">
         
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,14 +10,24 @@
     <link href="modalFormations.css" rel="stylesheet">
     <title>Formations</title>
 </head>
-<body>
+<body class="bodyModalInfo">
 
     <header>
-        <img src="./assets/images/snake.png" alt="snake">
-        <h1>Formations</h1>
+    <header>
+        <div class="headerInformation">
+                <img src="img/banderoleSerpentard.png" alt="logoSerpentard" class="logoSerpentard">
+            <div class="logoEtText">
+                <h1>Formations</h1>
+               <img src="img/snake2.png" alt="snake" class="imgSerpent">
+            </div>
+                <img src="img/banderoleSerpentard.png" alt="logoSerpentard" class="logoSerpentard">
+        </div>    
+
     </header>
 
+    <main>
     <ul>
+        <div class="divInformation">
     <?php foreach ($dataFormations['formations'] as $formation) : ?>
 
         <li><span class="dates"><?= $formation['date'];?></span> : <?=$formation['school'];?> - <?=$formation['town'];?></li>
@@ -26,5 +35,11 @@
 
   <?php endforeach ?>
     
+    </div>
+  </main>
+    <footer class="footerModalInfo">
+        <img src="img/deathEater.png" alt="deathEater" class="deathEater">
+    </footer>
 </body>
+
 </html>

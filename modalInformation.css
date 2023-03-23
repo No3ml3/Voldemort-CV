@@ -22,14 +22,15 @@
     --spacing6 : 6rem;
 }
 
-body{
+.bodyModalInfo{
     display: flex;
     flex-direction: column;
     align-items: center;  
     background-image: url(img/voldemortcvmodal.jpg);
+    background-position: left 15% top 30%;
     background-size: cover;
     font-size: 1.5rem;
-    color : white;
+    color : rgb(173, 178, 173);
     margin-bottom: 2rem;
 }
 .headerInformation{  
@@ -37,12 +38,26 @@ body{
     flex-direction: column; 
     align-items: center;
 
-    font-size: clamp(1rem, 4vw, 4rem);
-    font-family: var(--fontEffrayante);
+    font-size: clamp(1.5rem, 4vw, 5rem);
+    font-family: var(--fontPasEffrayante);
+}
+
+.logoEtText{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logoEtText h1{
+    margin: 2%;
+}
+
+.logoSerpentard{
+    width: clamp(60px, 15%, 250px);
 }
 
 .imgSerpent{
-    width: 50%;
+    width: 40%;
+    margin-bottom: 5%;
 }
 
 
@@ -69,6 +84,20 @@ body{
 }
 .divInformation div {
    justify-self: center;
+   border:#191a1a solid 1px;
+   box-shadow: 5px 2px 2px rgba(35, 35, 35, 0.518);
+   padding: 10%;
+}
+
+.footerModalInfo{
+    display: flex;
+    justify-content: center;
+
+    margin: 1rem;
+}
+
+.deathEater{
+    width: 40%;
 }
 
 
@@ -80,4 +109,7 @@ body{
 
     }   
 }
+
+
+
 

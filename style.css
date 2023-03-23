@@ -23,7 +23,6 @@ body{
     background-image: url(assets/images/essai.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    cursor: url("assets/images/voldemortcursor.png");
 }
 
 
@@ -37,7 +36,7 @@ body{
     margin-top: 6rem ;
 }
 
-header h1 {
+.h1 header h1 {
     background-color: #0A0707;
     height:2rem;
     border-radius: var(--spacing);
@@ -76,10 +75,6 @@ header h1 {
     position: absolute;
     width: 450px;
 }
- 
- 
- 
-
 
 .bouton article{
     display: flex;
@@ -200,8 +195,8 @@ header h1 {
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    box-shadow: 0 0 100vmax 100vmax rgba(0, 0, 0, 0.8);
-    
+    background-color: #0a0707aa;
+    backdrop-filter: blur(5px);
 }
 
   /* Modal Content/Box */
@@ -213,7 +208,6 @@ header h1 {
     left: 0;
     top: 0;
     margin: 10% auto; /* 15% from the top and centered */
-    padding: 20px;
     border: 1px solid #888;
     color:grey;
     overflow: auto; /* Enable scroll if needed */
@@ -222,15 +216,14 @@ header h1 {
     
 }
 
-#presentation{
+.modalPresentation{
     display: none;
     top: 100px;
     margin:  auto;
     text-align: center;
     margin: auto;
     width: 50%;
-    height: 100%;
-    font-family: var(--fontEffrayante);
+    font-family: var(--fontPasEffrayante);
 }
 
 .modalFormation{
@@ -240,31 +233,33 @@ header h1 {
     text-align: center;
     margin: auto;
     width: 50%;
-    height: 100%;
-    font-family: var(--fontEffrayante);
+    font-family: var(--fontPasEffrayante);
 }
-
 .modalFormation h1{
     text-align: center;
     font-weight : bolder;
     line-height : 2rem;
-    font-family: var(--fontEffrayante);
-    font-size : 2rem;
-    border-radius: 50px;
-}
-.modalFormation ul{
-    padding : 5%;
-    display : flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-}
-.modalFormation li{
-    margin-bottom : 5%;
-    font-size: 1rem;
-    line-height : 2rem;
-    font-weight : bold;
+    font-family:  var(--fontPasEffrayante);
+    font-size : 3rem;
     
+}
+.divFormation{
+    gap: clamp(4rem, 5vw, 10rem);
+    font-family: var(--fontPasEffrayante);
+    list-style: none;
+    font-size: clamp(2rem, 3vw, 3rem);
+    justify-self: center;
+    padding: 10%;
+}
+.divFormation li{
+    margin-bottom: 10%;
+}
+.divFormation p{
+
+    list-style: none;
+    font-family: var(--fontPasEffrayante);
+    font-size: 1.5rem;
+
 }
 .dates{
     font-size : 2rem;
@@ -278,7 +273,6 @@ header h1 {
     text-align: center;
     margin: auto;
     width: 50%;
-    height: 100%;
     font-family:  var(--fontPasEffrayante);
 }
 
@@ -289,7 +283,6 @@ header h1 {
     text-align: center;
     margin: auto;
     width: 50%;
-    height: 100%;
     font-family:  var(--fontPasEffrayante);
 }
 
@@ -323,7 +316,6 @@ header h1 {
     text-align: center;
     margin: auto;
     width: 50%;
-    height: 100%;
     font-family:  var(--fontPasEffrayante);
 }
 
@@ -383,7 +375,6 @@ header h1 {
     text-align: center;
     margin: auto;
     width: 50%;
-    height: 100%;
     font-family:  var(--fontPasEffrayante);
 }
 
@@ -394,10 +385,67 @@ header h1 {
     text-align: center;
     margin: auto;
     width: 50%;
-    height: 100%;
     font-family:  var(--fontPasEffrayante);
 }
 
+
+.banniere{
+    display: flex;
+    justify-content: space-around;
+}
+
+.modalInformation h1{
+    margin: 2%;
+    font-size: 3rem;
+}
+
+.banniere img{
+    width: 200px;
+    height: 250px;
+    
+    
+}
+
+.imgSerpent{
+    width: 40%;
+    margin-bottom: 5%;
+}
+.divInformation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    gap: clamp(4rem, 5vw, 10rem);
+}
+
+.divInformation h2{    
+    font-family: var(--fontPasEffrayante);
+    font-size: 2.5rem;
+    
+}
+
+.divInformation ul,li{
+ 
+    list-style: none;
+    font-family: var(--fontPasEffrayante);
+    font-size: 1.5rem;
+
+}
+.divInformation div {
+   justify-self: center;
+   padding: 10%;
+}
+
+.footerModalInfo{
+    display: flex;
+    justify-content: center;
+
+    margin: 1rem;
+}
+
+.deathEater{
+    width: 40%;
+}
 /* The Close Button */
 .close {
     color: #aaa;
@@ -452,7 +500,7 @@ header h1 {
         grid-column: 1 / 2;
         grid-row: 3 / 4;
         justify-self: center;
-    width: 90%;
+            width: 90%;
         max-width: 700px;
     }
     
@@ -525,7 +573,7 @@ header h1 {
         width:100%
     }
 
-    .modalFormation div{
+    .modalFormation {
         width:100%
     }
     .modalCompetence div{
@@ -555,7 +603,7 @@ header h1 {
     }
 
     .dates{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .modalReference div{
@@ -565,7 +613,33 @@ header h1 {
     .modalInformation div{
         width:100%
     }
-    
+    .divInformation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+    }   
+
+    .divFormation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%
+    } 
+    .divFormation p{
+        font-size: 1.5rem;
+    }
+
+    .banniere img{
+        width: 100px;
+        height: 50%;                                                                
+    }
+
+    .deathEater{
+        width:100%;
+        height: 100%;
+    }
 }
 @media screen and (min-width: 1001px) and (max-width:1500px){
     .h11{

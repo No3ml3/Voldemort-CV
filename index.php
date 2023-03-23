@@ -1,3 +1,8 @@
+<?php 
+require 'tableauInformation.php';
+require 'dataFormations.php' 
+?>
+
 <?php
     $messages_erreur = array();
     if($_SERVER['REQUEST_METHOD'] === 'POST')
@@ -44,7 +49,7 @@
     <header>
         <div class="h1">
             <h1 class="h11">THANATOPRACTEUR</h1> 
-            <img src="assets/images/Lordvoldemort-1-.png" alt="photo Voldemort pour CV" class="VoldemortPhoto"/>
+            <img src="assets/images/Lordvoldemort-1-.png" alt="photo Voldemort pour CV" id='voldemort' class="VoldemortPhoto"/>
             <h1 class="H12"> LORD VOLDEMORT </h1> 
         </section>
     </header>
@@ -67,16 +72,20 @@
 
         <!-- Modal contenu -->
         <div id='modal-content' class="modal-content">
-        
-            <span onclick="closeModal()" class="close">
+        <span onclick="closeModal()" class="close">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                 <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
             </svg>
             </span>
+            <div class='banniere'>
+                    <img src="assets/images/banderoleSerpentard.png" alt="logoSerpentard" class="logoSerpentard">
+                    <img src="assets/images/banderoleSerpentard.png" alt="logoSerpentard" class="logoSerpentard">
+            </div>        
+            
             <div id='presentation' class='modalPresentation'>
                 <h1>Présentation</h1>
 
-                <img src="assets/images/snake1.png" alt="snake">
+                <img src="assets/images/snake1.png" alt="snake" class='imgSerpent'>
         
                 <p> 
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis praesentium explicabo
@@ -92,23 +101,30 @@
 
             <div id='formation' class='modalFormation'>
             
-            <img src="assets/images/snake1.png" alt="snake">
-            <h1>Formations</h1>
-        
-
-        <ul>
-            <li><span class="dates">1930 - 1933</span> : Ecole maternelle Ruben Koyekoué - Mantes-La-Jolie </li>
-            <li><span class="dates">1933 - 1939</span> : Ecole élémentaire Sylvain Blondeau - Bouzonville-Aux-Bois</li>
-            <li><span class="dates">1939 - 1950</span> : Ecole de magie et de sorcellerie - Poudlard</li>
-            <li><span class="dates">1952 - 1953</span> : Brevet d'aptitude aux fonctions d'animateur (BAFA) - Glasgow </li>
-            <li><span class="dates">1953 - 1955</span> : DUT Thanatopraxie : Université Amaury Becker - Edimbourg</li>
-            <li><span class="dates">1955 - 1957</span> : CQP d'agent technique en marbrerie funéraire - Ecole de Funétique - Dundee </li>
-        </ul>
+            
+                        <h1>Formations</h1>
+                        <img src="assets/images/snake1.png" alt="snake" class="imgSerpent">
+                        <main>
+                        <ul>
+                            <div class="divFormation">
+                                <?php foreach ($dataFormations['formations'] as $formation) : ?>
+                                    <li> 
+                                        <p>
+                                            <span class="dates"><?= $formation['date'];?></span> : <?=$formation['school'];?> - <?=$formation['town'];?>
+                                        </p>
+                                    </li>
+                                <?php endforeach ?>
+                            </div>
+                        </ul>
+                    </main>
+                        <footer class="footerModalInfo">
+                            <img src="assets/images/deathEater.png" alt="deathEater" class="deathEater">
+                        </footer>
             </div>
 
             <div id='competence' class='modalCompetence' >
                 <h1>Compétences</h1>
-                <img src="assets/images/snake1.png" alt="snake">
+                <img src="assets/images/snake1.png" alt="snake" class='imgSerpent'>
                 <p>
 
                 </p>
@@ -118,7 +134,7 @@
                     
                     
                     <h1>Expériences</h1>
-                    <img src="assets/images/snake1.png" alt="snake">
+                    <img src="assets/images/snake1.png" alt="snake" class='imgSerpent'>
                     
 
                 <ul>
@@ -166,7 +182,7 @@
 
             <div id='reference' class='modalReference'>
                 <h1>Références</h1>
-                <img src="assets/images/snake1.png" alt="snake">
+                <img src="assets/images/snake1.png" alt="snake" class='imgSerpent'>
 
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis praesentium explicabo
                     et eum maxime delectus inventore ducimus alias, accusamus libero voluptates possimus quidem
@@ -179,16 +195,30 @@
             </div>
 
             <div id='information' class='modalInformation'>
-                <h1>Informations</h1>
-                <img src="assets/images/snake1.png" alt="snake">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis praesentium explicabo
-                    et eum maxime delectus inventore ducimus alias, accusamus libero voluptates possimus quidem
-                    id eveniet? Praesentium corporis doloribus molestias.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis praesentium explicabo
-                    et eum maxime delectus inventore ducimus alias, accusamus libero voluptates possimus quidem
-                    id eveniet? Praesentium corporis doloribus molestias.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis praesentium explicabo
-                    et eum maxime delectus inventore ducimus alias, accusamus libero voluptates possimus quidem
-                    id eveniet? Praesentium corporis doloribus molestias.
-                </p>
+                        <h1>Informations</h1>
+                    <img src="assets/images/snake1.png" alt="snake" class="imgSerpent">
+
+            <main>
+                <div class="divInformation">
+                <?php foreach($dataInformation as $title => $information):?>
+                        <div class="<?= $title; ?>">
+                            <h2><?= $title; ?></h2>
+                            
+                            <ul>
+                                <?php foreach($information as $text):?>
+                                <li> 
+                                    <p> <?= $text ?> </p>
+                                </li>
+                                <?php endforeach; ?>
+                            </ul>
+                            
+                        </div>
+                        <?php endforeach; ?>
+                        </div>
+                </main>
+                <footer class="footerModalInfo">
+                    <img src="assets/images/deathEater.png" alt="deathEater" class="deathEater">
+                </footer>
             </div>
         </div>
     </div>    

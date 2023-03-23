@@ -30,6 +30,7 @@ let contact = document.getElementById("myBtn5");
 let reference = document.getElementById("myBtn6");
 let information = document.getElementById("myBtn7");
 
+let voldemort = document.getElementById('voldemort')
     
     
     // Vérifiez quel bouton a été cliqué et définissez le contenu modal en conséquence
@@ -126,6 +127,10 @@ let information = document.getElementById("myBtn7");
         modalTextPresentation.style.display = "none";
     });
 
+    voldemort.addEventListener("click", function() {
+        avadaKedavra.play();
+    });
+
     function closeModal(){
         let content = document.getElementById('modal-content');
         let closeModal = document.getElementById('myModal')
@@ -134,6 +139,7 @@ let information = document.getElementById("myBtn7");
         if(span.onclick ){
             closeModal.style.display = "none";
             content.style.display = "none";
+            reduire.play();
     
         }
     }

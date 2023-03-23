@@ -19,14 +19,12 @@ include 'tableauInformation.php';
 
     <header>
         <div class="headerInformation">
+                <img src="img/banderoleSerpentard.png" alt="logoSerpentard" class="logoSerpentard">
             <div class="logoEtText">
-                <img src="img/banderoleSerpentard.png" alt="logoSerpentard" class="logoSerpentard">
                 <h1>Informations</h1>
-                <img src="img/banderoleSerpentard.png" alt="logoSerpentard" class="logoSerpentard">
-
+               <img src="img/snake2.png" alt="snake" class="imgSerpent">
             </div>
-
-            <img src="img/snake2.png" alt="snake" class="imgSerpent">
+                <img src="img/banderoleSerpentard.png" alt="logoSerpentard" class="logoSerpentard">
         </div>
 
     </header>

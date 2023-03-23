@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Eater&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
 :root{
     --fontColorHeader: #8FC2BB;
     --fontColor: #191a1a;
@@ -15,7 +15,138 @@
     box-sizing: border-box;
     
     
+}
+.dates{
+    font-size : 2rem;
+}
 
+#competence{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Eater', cursive;
+}
+
+#experience{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Eater', cursive;
+}
+
+#contact{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Eater', cursive;
+}
+#contact @media screen and (max-width : 768px){
+        body{
+            background-size: 100% 100%;
+            background-repeat: repeat;
+        }
+        form{
+            align-items : center;
+        }
+        input, textarea{
+            width : 90%;
+            padding : auto;
+            margin-top : 15%;
+        }
+        button{
+            width : 40%;
+            margin-left : initial;
+        }
+    }
+    #contact legend{
+        color : hsl(180, 28%, 65%);
+        text-align: center;
+        font-size: 3rem;
+        font-weight : bolder;
+    }
+    #contact form{
+        display : flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+    #contact input{
+        width : 50%;
+        height : 60px;
+        border-radius : 8px;
+        margin-top: 5%;
+        padding : 1%;
+        background-color: hsl(180, 28%, 65%);
+    }
+    #contact  textarea{
+        width : 80%;
+        height : 180px;
+        border-radius : 8px;
+        background-color: hsl(180, 28%, 65%);
+        margin-top: 5%;
+        padding : 1%;
+    }
+    #contact  button{
+        width : 17%;
+        height : 3rem;
+        margin-top : 2%;
+        margin-left : 70%;
+        padding : auto;
+        background-color: grey;
+        color : white;
+        border-radius : 8px;
+        font-weight: bold;
+    }
+    button a{
+        text-decoration: none;
+        color : white;
+        font-size : 1.3rem;
+    }
+#reference{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Eater', cursive;
+}
+
+#information{
+    display: none;
+    top: 100px;
+    margin:  auto;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Eater', cursive;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    
 }
 
 body{

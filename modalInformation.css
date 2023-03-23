@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Eater&display=swap');
+
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fontColorHeader: #8FC2BB;
+    --fontColor: #191a1a;
+    --fontEffrayante : 'Eater', cursive;
+    --fontPasEffrayante : 'Caveat', cursive;
+    --spacing : 0.5rem;
+    --spacing1 : 1rem;
+    --spacing2 : 2rem;
+    --spacing3 : 3rem;
+    --spacing4 : 4rem;
+    --spacing5 : 5rem;
+    --spacing6 : 6rem;
+}
+
+.bodyModalInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+
+    background-image: url(img/voldemortcvmodal.jpg);
+    background-position: left 15% top 30%;
+    background-size: cover;
+    font-size: 1.5rem;
+    color : rgb(173, 178, 173);
+    margin-bottom: 2rem;
+}
+.headerInformation{  
+    display: flex;
+    justify-content: space-around;
+
+    font-size: clamp(1.5rem, 4vw, 5rem);
+    font-family: var(--fontPasEffrayante);
+    margin-bottom: 5%;
+    perspective: 5000px;
+    transform-style: preserve-3d;
+}
+
+.logoEtText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+}
+
+.logoEtText h1{
+    margin: 2%;
+}
+
+.logoSerpentard{
+    width: clamp(60px, 15%, 250px);
+    filter: drop-shadow(10px 10px 4px #121212ae) ;
+    animation: taille 2s ease-in-out infinite alternate;
+    transform-origin: center top;
+}
+
+@keyframes taille{
+    from{transform:rotateX(20deg)}
+    to{transform:rotateX(-20deg)}
+
+}
+
+.imgSerpent{
+    width: 40%;
+}
+
+
+.divInformation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    gap: clamp(4rem, 6vw, 15rem);
+    margin: 1rem;
+}
+
+.divInformation h2{    
+    font-family: var(--fontPasEffrayante);
+    font-size: clamp(2.2rem, 4vw, 5rem);
+}
+
+.divInformation ul{
+    display: flex;
+    list-style: none;
+    font-family: var(--fontPasEffrayante);
+    font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.divInformation div {
+   justify-self: center;
+   background-color: rgba(0, 0, 0, 0.498);
+   width: 100%;
+   padding: 2rem;
+   border-radius: 4px;
+}
+
+.footerModalInfo{
+    display: flex;
+    justify-content: center;
+
+    margin: 1rem;
+}
+
+.deathEater{
+    width: 40%;
+}
+
+
+@media screen and (max-width:500px) {
+    .divInformation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+
+}
+
+
+
+

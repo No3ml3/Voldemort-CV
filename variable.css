@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Eater&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-image: url(assets/images/fond8.jpg);
+    background-attachment: fixed;
+    background-position:right;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+:root{
+    --fontColorHeader: #8FC2BB;
+    --fontColor: #191a1a;
+    --fontEffrayante : 'Eater', cursive;
+    --fontPasEffrayante : 'Caveat', cursive;
+    --spacing : 0.5rem;
+    --spacing1 : 1rem;
+    --spacing2 : 2rem;
+    --spacing3 : 3rem;
+    --spacing4 : 4rem;
+    --spacing5 : 5rem;
+    --spacing6 : 6rem;
+}

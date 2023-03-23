@@ -1,0 +1,68 @@
+@import 'variable.css';
+
+.navbar {
+    justify-content: space-between;
+    display: flex;
+
+    background-image: url(assets/images/fondHeader1.jpg);
+    }
+    
+.imgFooter {
+    width: 45px;
+    padding: 10px;
+    border-radius: 1rem;
+    }
+    
+.imgFooter:hover {
+    color: #000000;
+    background-color: white;
+    border-radius: 1rem;
+    border: 2px solid black;
+    }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+     }
+
+.réseaux {
+    display: flex;
+    align-items: center;
+
+    margin-left: 0.5rem;
+    }
+
+.réseaux > img {
+    width: 60px;
+    }
+
+.navbar p {
+    color: white;
+    display:flex ;
+    flex-direction: column;
+    padding-right: 1rem;
+}
+
+.footer > div {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    }
+
+@media screen and (max-width: 500px) {
+
+.navbar{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.réseaux{
+    display: flex;
+    justify-content: space-around;
+
+}
+.footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+}

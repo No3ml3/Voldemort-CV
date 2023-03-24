@@ -551,3 +551,40 @@ header h1 {
     }
 
  }
+
+.modalCompetences > h2 {
+
+text-decoration: underline;
+font-size: 2.7rem;
+
+}
+
+
+.modalCompetences > h2 > p{
+
+    list-style: none;
+    line-height: 5rem;
+    text-align: center;
+    
+
+
+}
+.modalCompetences  article > p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.6rem;
+    
+
+
+    
+}
+
+.modalCompetences  article > h2 {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    
+}
+.modalCompetences article {
+    margin-top: 2rem;
+}
+
+    

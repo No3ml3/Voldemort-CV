@@ -1,0 +1,21 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    background-image: url(voldemort.jpg);
+    background-size: cover;
+    font-size: 1.5rem;
+    color:rgba(0, 0, 0, 0.863);
+    padding : 5%;
+}
+header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items : center; 
+}
+

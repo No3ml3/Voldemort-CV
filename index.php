@@ -1,6 +1,7 @@
 <?php 
 require 'tableauInformation.php';
-require 'dataFormations.php' 
+require 'dataFormations.php' ;
+require 'dataRef.php';
 ?>
 
 <?php
@@ -33,8 +34,6 @@ require 'dataFormations.php'
             $erreur = true;
             $messages_erreur['commentaire'] = "Le champ 'commentaire' est obligatoire";
         } 
-    }else{
-        echo 'votre message a bien été envoyer ';
     }
 ?>
 <!DOCTYPE html>
@@ -42,27 +41,41 @@ require 'dataFormations.php'
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    
+
     <title>Modal</title>
 </head>
 <body>    
     <header>
-        <div class="h1">
-            <h1 class="h11">THANATOPRACTEUR</h1> 
-            <img src="assets/images/Lordvoldemort-1-.png" alt="photo Voldemort pour CV" id='voldemort' class="VoldemortPhoto"/>
-            <h1 class="H12"> LORD VOLDEMORT </h1> 
-        </section>
+    <div class="blocHeader">
+            <h1 class="blocThanatopracteur">THANATOPRACTEUR</h1>
+            <img src="assets/images/Lordvoldemort-1-.png" alt="photo Voldemort pour CV" class="VoldemortPhoto" id='voldemort'/>
+            <h1 class="blocVoldemort"> LORD VOLDEMORT </h1>
+    </div>       
     </header>
     <main>
         <!-- ouverture de la Modal -->
         <div class="bouton">
-            <article id="myBtn1" class="presentation"> <h2>Présentation</h2></article>
-            <article id="myBtn2" class="formation"><h2>Formations</h2></article>
-            <article id="myBtn3" class="competence"><h2>Compétences</h2></article>   
-            <article id="myBtn4" class="experience"><h2>Expériences</h2></article>
-            <article id="myBtn5" class="contact"><h2>Contact</h2></article>
-            <article id="myBtn6" class="reference"><h2>Références</h2></article>
-            <article id="myBtn7" class="information"><h2>Informations</h2></article>
+            <article class="presentation">
+                <h2>Présentation</h2>
+                <p class="presentationText">Lord Voldemort aka Tom Elvis Jedusor (PS: NE PRONONCÉ PAS MON NOM), le plus
+                    dangereux mage noir de tous les temps se propose pour le rôle de thanatopracteur au sein de votre
+                    entreprise. Ancien élève au sein de l'école de magie Poudlard, je pense parfaitement représenter les
+                    traits qui caractérisent ma maison Serpentard: Machiavélique, diabolique, retors, tortueux. Je serai
+                    parfaitement capable de m'intégrer au sein de votre entreprise pour créer une ambiance intimiste et
+                    détendue. Le meilleur élève de ma promo; j'ai su démontrer dans ma vie mes immenses capacités
+                    magiques. Ha et je suis immortel ou plutôt disons que j'ai defié la mort et que j'ai gagné.
+                    (Embauchez-moi sinon je vous tue) </p>
+            </article>
+            <div class="boutonModal">
+                <article id="myBtn2" class="formation"><h2>Formations</h2></article>
+                <article id="myBtn3" class="competence"><h2>Compétences</h2></article>   
+                <article id="myBtn4" class="experience"><h2>Expériences</h2></article>
+                <article id="myBtn5" class="contact"><h2>Contact</h2></article>
+                <article id="myBtn6" class="reference"><h2>Références</h2></article>
+                <article id="myBtn7" class="information"><h2>Informations</h2></article>
+            </div>    
         </div>
 </main>
     
@@ -184,15 +197,21 @@ require 'dataFormations.php'
                 <h1>Références</h1>
                 <img src="assets/images/snake1.png" alt="snake" class='imgSerpent'>
 
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis praesentium explicabo
-                    et eum maxime delectus inventore ducimus alias, accusamus libero voluptates possimus quidem
-                    id eveniet? Praesentium corporis doloribus molestias.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis praesentium explicabo
-                    et eum maxime delectus inventore ducimus alias, accusamus libero voluptates possimus quidem
-                    id eveniet? Praesentium corporis doloribus molestias.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis praesentium explicabo
-                    et eum maxime delectus inventore ducimus alias, accusamus libero voluptates possimus quidem
-                    id eveniet? Praesentium corporis doloribus molestias.
-                </p>
-            </div>
+                                <section class="references">
+                <?var_dump($dataReferences);?>
+                    <?php foreach ($dataReferences['references'] as $reference) : ?>
+
+                    <div class="persoReference">
+                        <img src="./assets/images/<?= $reference['picture']; ?> " alt="">
+                        <div class="description">
+                        <h1><?= $reference['name']; ?></h1>
+                        <h2><?= $reference['job']; ?></h2>
+                    </div>
+                        </div>
+
+                        <?php endforeach ?>
+
+                    </section>
 
             <div id='information' class='modalInformation'>
                         <h1>Informations</h1>
@@ -222,7 +241,27 @@ require 'dataFormations.php'
             </div>
         </div>
     </div>    
-
+    
+    <footer>
+        <nav class="navbar">
+            <div class="réseaux">
+                <img class="imgFooter" src="assets/images/facebook.jpg">
+                <img class="imgFooter" src="assets/images/instagram.jpg">
+                <img class="imgFooter" src="assets/images/snapchat.jpg">
+                <img class="imgFooter" src="assets/images/twitter.jpg">
+            </div>
+            <div class="footer">
+                <div class="email">
+                    <img class="imgFooter" src="assets/images/messagerie.jpg">
+                    <p> email:voldemort@gmail.com</p>
+                </div>
+                <div class="tel">
+                    <img class="imgFooter" src="assets/images/téléphone.jpg">
+                    <p> tel:01.66.66.66</p>
+                </div>
+            </div>
+        </nav>
+    </footer>
 
 
     

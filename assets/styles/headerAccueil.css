@@ -1,4 +1,4 @@
-@import 'variable.css';
+
 
 .blocHeader{
     display: flex;
@@ -10,7 +10,7 @@
 }
 
 header h1 {
-    background-image: url(assets/images/fondHeader1.jpg);
+    background-image: url(../images/fondHeader1.jpg);
     height:2rem;
     border-radius: var(--spacing);
     font-size: clamp(30px, 2vw, 5rem);

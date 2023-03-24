@@ -13,7 +13,6 @@ let avadaKedavra = new Audio("assets/audio/avada-kedavra.mp3");
     // recuperer la modal
 let modal = document.getElementById("myModal");
 let content = document.getElementById('modal-content');
-let modalTextPresentation =document.getElementById("presentation")
 let modalTextFormation =document.getElementById("formation")
 let modalTextCompetence =document.getElementById("competence")
 let modalTextExperience =document.getElementById("experience")
@@ -34,27 +33,13 @@ let voldemort = document.getElementById('voldemort')
     
     
     // Vérifiez quel bouton a été cliqué et définissez le contenu modal en conséquence
-    presentation.addEventListener("click", function() {
-        modal.style.display = "block";
-        content.style.display = "block";
-        modalTextPresentation.style.display = "block";
-        audio.play();
-        modalTextFormation.style.display = "none";
-        modalTextCompetence.style.display = "none";
-        modalTextExperience.style.display = "none";
-        modalTextContact.style.display = "none";
-        modalTextReference.style.display = "none";
-        modalTextInformation.style.display = "none";
-        
-        
-    });
+    
 
     formation.addEventListener("click", function() {
         modal.style.display = "block";
         content.style.display = "block";
         modalTextFormation.style.display = "block";
         audio.play();
-        modalTextPresentation.style.display = "none";
         modalTextCompetence.style.display = "none";
         modalTextExperience.style.display = "none";
         modalTextContact.style.display = "none";
@@ -68,7 +53,6 @@ let voldemort = document.getElementById('voldemort')
         modalTextCompetence.style.display = "block";
         audio.play();
         modalTextFormation.style.display = "none";
-        modalTextPresentation.style.display = "none";
         modalTextExperience.style.display = "none";
         modalTextContact.style.display = "none";
         modalTextReference.style.display = "none";
@@ -82,7 +66,6 @@ let voldemort = document.getElementById('voldemort')
         audio.play();
         modalTextFormation.style.display = "none";
         modalTextCompetence.style.display = "none";
-        modalTextPresentation.style.display = "none";
         modalTextContact.style.display = "none";
         modalTextReference.style.display = "none";
         modalTextInformation.style.display = "none";
@@ -96,7 +79,6 @@ let voldemort = document.getElementById('voldemort')
         modalTextFormation.style.display = "none";
         modalTextCompetence.style.display = "none";
         modalTextExperience.style.display = "none";
-        modalTextPresentation.style.display = "none";
         modalTextReference.style.display = "none";
         modalTextInformation.style.display = "none";
     });
@@ -110,7 +92,6 @@ let voldemort = document.getElementById('voldemort')
         modalTextCompetence.style.display = "none";
         modalTextExperience.style.display = "none";
         modalTextContact.style.display = "none";
-        modalTextPresentation.style.display = "none";
         modalTextInformation.style.display = "none";
     });
 
@@ -124,7 +105,7 @@ let voldemort = document.getElementById('voldemort')
         modalTextExperience.style.display = "none";
         modalTextContact.style.display = "none";
         modalTextReference.style.display = "none";
-        modalTextPresentation.style.display = "none";
+        
     });
 
     voldemort.addEventListener("click", function() {

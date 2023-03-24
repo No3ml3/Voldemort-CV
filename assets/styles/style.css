@@ -1,143 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
-:root{
-    --fontColorHeader: #8FC2BB;
-    --fontColor: #191a1a;
-    --fontEffrayante : 'Eater', cursive;
-    --fontPasEffrayante : 'Caveat', cursive;
-    --spacing : 0.5rem;
-    --spacing1 : 1rem;
-    --spacing2 : 2rem;
-    --spacing3 : 3rem;
-    --spacing4 : 4rem;
-}
+@import '../styles/variable.css';
+@import '../styles/headerAccueil.css';
+@import "../styles/bodyAccueil.css";
+@import "../styles/footerAccueil.css";
+@import '../styles/modalRef.css';
+
 *{
     box-sizing: border-box;
     
     
-}
-.dates{
-    font-size : 2rem;
-}
-
-#competence{
-    display: none;
-    top: 100px;
-    margin:  auto;
-    text-align: center;
-    margin: auto;
-    width: 50%;
-    height: 100%;
-    overflow: auto;
-    font-family: 'Eater', cursive;
-}
-
-#experience{
-    display: none;
-    top: 100px;
-    margin:  auto;
-    text-align: center;
-    margin: auto;
-    width: 50%;
-    height: 100%;
-    overflow: auto;
-    font-family: 'Eater', cursive;
-}
-
-#contact{
-    display: none;
-    top: 100px;
-    margin:  auto;
-    text-align: center;
-    margin: auto;
-    width: 50%;
-    height: 100%;
-    overflow: auto;
-    font-family: 'Eater', cursive;
-}
-#contact @media screen and (max-width : 768px){
-        body{
-            background-size: 100% 100%;
-            background-repeat: repeat;
-        }
-        form{
-            align-items : center;
-        }
-        input, textarea{
-            width : 90%;
-            padding : auto;
-            margin-top : 15%;
-        }
-        button{
-            width : 40%;
-            margin-left : initial;
-        }
-    }
-    #contact legend{
-        color : hsl(180, 28%, 65%);
-        text-align: center;
-        font-size: 3rem;
-        font-weight : bolder;
-    }
-    #contact form{
-        display : flex;
-        flex-direction: column;
-        padding: 5%;
-    }
-    #contact input{
-        width : 50%;
-        height : 60px;
-        border-radius : 8px;
-        margin-top: 5%;
-        padding : 1%;
-        background-color: hsl(180, 28%, 65%);
-    }
-    #contact  textarea{
-        width : 80%;
-        height : 180px;
-        border-radius : 8px;
-        background-color: hsl(180, 28%, 65%);
-        margin-top: 5%;
-        padding : 1%;
-    }
-    #contact  button{
-        width : 17%;
-        height : 3rem;
-        margin-top : 2%;
-        margin-left : 70%;
-        padding : auto;
-        background-color: grey;
-        color : white;
-        border-radius : 8px;
-        font-weight: bold;
-    }
-    button a{
-        text-decoration: none;
-        color : white;
-        font-size : 1.3rem;
-    }
-#reference{
-    display: none;
-    top: 100px;
-    margin:  auto;
-    text-align: center;
-    margin: auto;
-    width: 50%;
-    height: 100%;
-    overflow: auto;
-    font-family: 'Eater', cursive;
-}
-
-#information{
-    display: none;
-    top: 100px;
-    margin:  auto;
-    text-align: center;
-    margin: auto;
-    width: 50%;
-    height: 100%;
-    overflow: auto;
-    font-family: 'Eater', cursive;
 }
 
 /* The Close Button */
@@ -149,173 +21,10 @@
     
 }
 
-body{
-    margin: 0;
-    background-image: url(assets/images/essai.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 
 
-.h1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    font-family: var(--fontEffrayante);
-    margin-top: 6rem ;
-}
-
-.h1 header h1 {
-    background-color: #0A0707;
-    height:2rem;
-    border-radius: var(--spacing);
-    font-size: clamp(30px, 2vw, 5rem);
-    border: 2px solid black;
-    box-shadow: 10px 5px 5px rgba(10, 9, 9, 0.25);
-}
-
-.h11{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: #8FC2BB;
-    padding-right: clamp(0.5rem, 10%, 5rem);
-    padding-top: clamp(0.5rem, 10%, 5rem);
-    padding-bottom: clamp(0.5rem, 10%, 5rem);
-    padding-left: clamp(0.5rem, 1%, 10rem);
-    width: 40%;
-}
-.H12{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: #8FC2BB;
-    padding-left: clamp(0.5rem, 10%, 5rem);
-    padding-top: clamp(0.5rem, 10%, 5rem);
-    padding-bottom: clamp(0.5rem, 10%, 5rem);
-    padding-right: clamp(0.5rem, 1%, 10rem);
-    width: 40%;
-}
-
-.VoldemortPhoto {
-    clip-path:ellipse(32% 50%);
-    position: absolute;
-    width: 450px;
-}
-
-.bouton article{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    font-family: var(--fontEffrayante);
-    border-radius: var(--spacing);
-    box-shadow: 10px 5px 5px rgba(10, 9, 9, 0.25);;
-    background-image: url(assets/images/fondbouton.jpg);
-    background-size: cover;
-}
-
-.bouton{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-
-    gap: clamp(2rem, 2vw, 6rem);
-    margin-top: var(--spacing4);
-}
-
-.bouton h2{
-    font-size: clamp(35px,2vw, 6rem);
-}
-
-.presentation{
-    grid-column: 2 / 5;
-    grid-row: 1 / 2;
-
-    filter: brightness(120%);
-    height: 80%;
-}
-
-.formation{
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-
-    height: clamp(9rem, 10vw, 17rem);
-}
-
-.competence{
-    grid-column: 4 / 5 ;
-    grid-row: 2 / 3;
-
-    height: clamp(9rem, 10vw, 17rem);
-}
-
-.experience{
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-
-    height: clamp(9rem, 10vw, 17rem);
-}
-
-.contact{
-    grid-column: 4 / 5 ;
-    grid-row: 3 / 4;
-
-    height: clamp(9rem, 10vw, 17rem);
-}
-
-.reference{
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-
-    height: clamp(9rem, 10vw, 17rem);
-}
-
-.information{
-    grid-column: 4 / 5 ;
-    grid-row: 4 / 5;
-
-    height: clamp(9rem, 10vw, 17rem);
-}
-
-.presentation:hover{
-    filter: brightness(90%);
-    box-shadow: none;
-}
-
-.formation:hover{
-    filter: brightness(80%);
-    box-shadow: none;
-}
-
-.competence:hover{
-    filter: brightness(80%);
-    box-shadow: none;
-}
-
-.experience:hover{
-    filter: brightness(80%);
-    box-shadow: none;
-}
-
-.contact:hover{
-    filter: brightness(80%);
-    box-shadow: none;
-}
-
-.reference:hover{
-    filter: brightness(80%);
-    box-shadow: none;
-}
-
-.information:hover{
-  filter: brightness(80%);
-  box-shadow: none;
-}
 
 /* The Modal (background) */
 .modal {
@@ -333,7 +42,7 @@ body{
   /* Modal Content/Box */
 .modal-content {
     display:none;
-    background-image: url('assets/images/voldemortcvmodal.jpg');
+    background-image: url('../images/voldemortcvmodal.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     left: 0;
@@ -375,16 +84,14 @@ body{
     
 }
 .divFormation{
-    gap: clamp(4rem, 5vw, 10rem);
+    
     font-family: var(--fontPasEffrayante);
     list-style: none;
     font-size: clamp(2rem, 3vw, 3rem);
     justify-self: center;
     padding: 10%;
 }
-.divFormation li{
-    margin-bottom: 10%;
-}
+
 .divFormation p{
 
     list-style: none;
@@ -523,7 +230,10 @@ body{
 .banniere{
     display: flex;
     justify-content: space-around;
+    perspective: 5000px;
+    transform-style: preserve-3d;
 }
+
 
 .modalInformation h1{
     margin: 2%;
@@ -533,10 +243,17 @@ body{
 .banniere img{
     width: 200px;
     height: 250px;
-    
+    filter: drop-shadow(10px 10px 4px #121212ae) ;
+    animation: taille 2s ease-in-out infinite alternate;
+    transform-origin: center top;
     
 }
 
+@keyframes taille{
+    from{transform:rotateX(20deg)}
+    to{transform:rotateX(-20deg)}
+
+}
 .imgSerpent{
     width: 40%;
     margin-bottom: 5%;
@@ -770,6 +487,38 @@ body{
     .deathEater{
         width:100%;
         height: 100%;
+    }
+    modalReferenceheader h1{
+        font-size : 1.5rem;
+    }
+    modalReference h1{
+        font-size : 1.5rem;
+    }
+    modalReference h2{
+        font-size : 1rem;
+    }
+    .references{
+        align-items : center;
+    }
+    .reference{
+        flex-direction : column;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap : nowrap;
+        gap : 5%;
+        margin-top : 8%;
+    }
+    .reference img{
+        width : 30%;
+        height : 30%;
+        aspect-ratio: 1/1;
+    }
+    .reference > img:hover{
+        transform : none;
+        transition : none;
+    }
+    .reference h1, .reference h2{
+        text-align: center;
     }
 }
 @media screen and (min-width: 1001px) and (max-width:1500px){

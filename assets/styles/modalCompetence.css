@@ -1,0 +1,38 @@
+.skillH2  {
+
+    font-size: 2rem;
+    
+    }
+    
+    
+    .modalCompetences > h2 > p{
+    
+        list-style: none;
+        line-height: 5rem;
+        text-align: center;
+        
+    
+    
+    }
+    .skillP  {
+        font-family: var(--fontPasEffrayante);
+        font-size: 1.5rem;
+        
+    
+    
+        
+    }
+    
+    .modalCompetences  article > h2 {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+        
+    }
+    .modalCompetences main article {
+        margin-top: 2rem;
+        background-color: rgba(0, 0, 0, 0.498);
+        padding: 2rem;
+        border-radius: 4px;
+    }
+    
+    
